@@ -25,12 +25,11 @@
 	#login-page {
 		background: url("../images/bg-small.jpg") repeat center center;
 	}
-	// Principaux conteneurs 
+	
 	body {
 		> header {
 			top: 5px;
 			left: 20px;
-			// right: 40px;
 			bottom: inherit;
 			width: auto;
 			z-index: 999;
