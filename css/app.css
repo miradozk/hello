@@ -93,7 +93,7 @@ form {
     *zoom: 1;
     *display: inline; }
   form label[for*="form-"] {
-    width: px2cent(360px); }
+    width: 26.35432%; }
   form input[type="submit"],
   form button[type="button"],
   form button[type="submit"] {
@@ -158,7 +158,7 @@ header {
   left: 0;
   position: fixed;
   overflow: hidden;
-  width: px2cent(200px); }
+  width: 14.64129%; }
   header nav {
     margin: 20px auto;
     position: relative;
@@ -214,7 +214,7 @@ header {
 
 section.page {
   right: 0;
-  width: px2cent(1166px);
+  width: 81.69839%;
   padding: 10px 20px; }
   section.page .page-header {
     position: relative; }
@@ -367,9 +367,13 @@ section.page {
     display: table;
     clear: both; }
   #items-paging a {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     -moz-box-shadow: 0 3px 0 #006644;
     -webkit-box-shadow: 0 3px 0 #006644;
     box-shadow: 0 3px 0 #006644;
+    background-color: #f2f2f2;
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none; }
