@@ -449,9 +449,7 @@ section.page {
         #current-item .item-infos li a:hover {
           text-decoration: underline; }
   #current-item #item-content {
-    font-family: Helvetica, Arial, sans-serif;
     padding: 10px 0;
-    line-height: 25px;
     *zoom: 1; }
     #current-item #item-content:after {
       content: "";
@@ -459,40 +457,44 @@ section.page {
       clear: both; }
     #current-item #item-content #item-content-enclosure {
       display: none; }
-    #current-item #item-content h1, #current-item #item-content h2, #current-item #item-content h3, #current-item #item-content h4 {
-      font-family: "Montserrat", sans-serif;
-      padding: 15px 0 5px 0; }
-    #current-item #item-content h1 {
-      font-size: 1.5em;
-      margin-left: 5px; }
-    #current-item #item-content h2 {
-      font-size: 1.4em;
-      margin-left: 10px; }
-    #current-item #item-content h3 {
-      font-size: 1.3em;
-      margin-left: 15px; }
-    #current-item #item-content h4 {
-      font-size: 1.2em;
-      margin-left: 20px; }
-    #current-item #item-content p,
-    #current-item #item-content li {
-      line-height: 1.5; }
-    #current-item #item-content pre {
-      background-color: #f2f2f2;
-      border: 1px solid #b2b2b2;
-      padding: 10px;
-      margin: 10px 0; }
-    #current-item #item-content ul {
-      padding: 0 0 0 30px;
-      margin: 10px 0;
-      list-style-type: square; }
-    #current-item #item-content img {
-      margin: 15px auto 15px auto;
-      max-width: 50%;
-      display: block; }
-    #current-item #item-content p,
-    #current-item #item-content br {
-      line-height: 30px; }
+
+#item-content h1, #item-content h2, #item-content h3, #item-content h4 {
+  font-family: "Montserrat", sans-serif;
+  padding: 15px 0 5px 0; }
+#item-content h1 {
+  font-size: 1.5em;
+  margin-left: 5px; }
+#item-content h2 {
+  font-size: 1.4em;
+  margin-left: 10px; }
+#item-content h3 {
+  font-size: 1.3em;
+  margin-left: 15px; }
+#item-content h4 {
+  font-size: 1.2em;
+  margin-left: 20px; }
+#item-content ul,
+#item-content ol {
+  list-style-type: square;
+  margin: 10px 0;
+  padding: 0 0 0 30px; }
+#item-content pre,
+#item-content q,
+#item-content blockquote {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fFFFFF; }
+#item-content q,
+#item-content blockquote {
+  margin-left: 20px;
+  margin-right: 20px; }
+#item-content strong {
+  font-weight: bold; }
+#item-content img {
+  display: block;
+  margin: 15px auto 15px auto;
+  max-width: 50%; }
 
 #login-page {
   background-color: #e8e8e8; }
