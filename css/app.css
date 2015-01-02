@@ -282,7 +282,7 @@ section.page {
       .page-header ul li a[href="?action=confirm-flush-history"]:after {
         content: "\f014"; }
       .page-header ul li a[href="?action=feeds"]:after {
-        content: "\f143"; }
+        content: "\f09e"; }
       .page-header ul li a[href="?action=config"]:after {
         content: "\f013"; }
       .page-header ul li a[href="?action=help"]:after {
@@ -292,15 +292,21 @@ section.page {
       .page-header ul li a[href="?action=about"]:after {
         content: "\f129"; }
       .page-header ul li a[href="?action=database"]:after {
-        content: "\f1b3"; }
+        content: "\f1c0"; }
       .page-header ul li a[href="?action=api"]:after {
         content: "\f0ec"; }
       .page-header ul li a[href*="action=refresh-feed"]:after {
         content: "\f021"; }
-
 .page-section h2 {
   margin-bottom: 15px;
   margin-top: 15px; }
+
+#page-counter, #nav-counter {
+  margin: 0 3px; }
+  #page-counter:before, #nav-counter:before {
+    content: " ("; }
+  #page-counter:after, #nav-counter:after {
+    content: ") "; }
 
 .items article {
   -moz-box-shadow: 0 3px 0 #006644;
@@ -314,9 +320,18 @@ section.page {
   .items article h2 {
     display: block;
     margin-bottom: 5px; }
+    .items article h2 a,
+    .items article h2 .favicon {
+      @extends %commonChld;
+      vertical-align: middle; }
     .items article h2 a {
       color: #000;
       text-decoration: none; }
+    .items article h2 .bookmark-icon {
+      display: none; }
+    .items article h2 .favicon {
+      height: 16px;
+      width: 16px; }
     .items article h2 .feed-last-checked {
       font-size: .8em; }
   .items article .preview {
@@ -343,23 +358,25 @@ section.page {
       .items .item-menu li a:before {
         margin-right: 2px; }
       .items .item-menu li a:first-child:before {
-        content: "\f0b0"; }
-      .items .item-menu li a[id*="original-"]:before {
-        content: "\f08e"; }
+        content: "\f09e"; }
+      .items .item-menu li a.original:before {
+        content: "\f0ac"; }
       .items .item-menu li a[href*="action=confirm-remove-feed"]:before {
         content: "\f014"; }
       .items .item-menu li a[href*="action=edit-feed"]:before {
         content: "\f044"; }
       .items .item-menu li a[href*="action=refresh-feed"]:before {
         content: "\f021"; }
-      .items .item-menu li a[id*="bookmark-"]:before {
-        content: "\f088"; }
-      .items .item-menu li a[id*="bookmark-"][data-reverse-label*="remove"]:before {
-        content: "\f087"; }
+      .items .item-menu li a.bookmark:before {
+        content: "\f005"; }
+      .items .item-menu li a.bookmark[data-reverse-label*="remove"]:before {
+        content: "\f006"; }
       .items .item-menu li a[href*="action=mark-item-removed"]:before {
         content: "\f014";
         margin-right: 2px; }
-      .items .item-menu li a[id*="status-"]:before {
+      .items .item-menu li a.mark:before {
+        content: "\f05d"; }
+      .items .item-menu li a.mark[data-action="mark-read"]:before {
         content: "\f058"; }
       .items .item-menu li a[href*="action=disable-grabber-feed"]:before {
         content: "\f057"; }

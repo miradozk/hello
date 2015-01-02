@@ -16,12 +16,30 @@
 			display: block;
 			margin-bottom:  5px;
 			
+			%commonChld {
+				display: inline-block;
+			}
+
+			a,
+			.favicon {
+				@extends %commonChld;
+				vertical-align: middle;
+			}
+
 			a {
 				@extend %title;
 				color: #000;
 				text-decoration: none;
 			}
 
+			.bookmark-icon {
+				display: none;
+			}
+
+			.favicon {
+				height: 16px;
+				width: 16px;
+			}
 			.feed-last-checked {
 				font-size:  .8em;
 			}
@@ -62,12 +80,12 @@
 
 				&:first-child {
 					&:before {
-						content: "\f0b0";
+						content: "\f09e";
 					}
 				}
-				&[id*="original-"] {
+				&.original {
 					&:before {
-						content: "\f08e";
+						content: "\f0ac";
 					}
 				}
 				&[href*="action=confirm-remove-feed"] {
@@ -86,13 +104,15 @@
 					}
 				}
 
-				&[id*="bookmark-"] {
+				// Add to bookmark
+				&.bookmark {
 					&:before {
-						content: "\f088";
+						content: "\f005";
 					}
+					// remove to bookmark
 					&[data-reverse-label*="remove"] {
 						&:before {
-							content: "\f087";
+							content: "\f006";
 						}
 					}
 				}
@@ -105,11 +125,19 @@
 					}	
 				}
 				
-				&[id*="status-"] {
+				// Mark as Read 
+				&.mark {
 					&:before {
-						content: "\f058";
-					}	
+						content: "\f05d";
+					}
+					// Mark as Unread
+					&[data-action="mark-read"] {
+						&:before {
+							content: "\f058";
+						}
+					}
 				}
+
 				&[href*="action=disable-grabber-feed"] {
 					&:before {
 						content: "\f057";
