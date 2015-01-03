@@ -315,7 +315,7 @@ section.page {
   background-color: #fFFFFF;
   margin-bottom: 15px;
   padding: 10px 20px; }
-  .items article[data-item-status="read"][data-item-page="feed-items"] {
+  .items article[data-item-status="read"] {
     background-color: rgba(153, 153, 153, 0.7); }
   .items article h2 {
     display: block;

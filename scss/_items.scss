@@ -7,9 +7,9 @@
 		padding: 10px 20px;
 
 		&[data-item-status="read"] {
-			&[data-item-page="feed-items"] {
+			// &[data-item-status="feed-items"] {
 				background-color: rgba(lighten(black,60%), .7);
-			}
+			// }
 		}
 
 		h2 {
