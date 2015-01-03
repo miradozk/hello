@@ -180,10 +180,6 @@ section {
 						text-indent: 0;
 					}
 					
-				}
-
-				
-				a{
 					&[href*="action=unread"],
 					&[href*="action=feed-items"] {
 						&[href*="direction=asc"] {
@@ -192,8 +188,6 @@ section {
 							}
 						}					
 					}
-				}
-				a {
 					&[href*="action=unread"],
 					&[href*="action=feed-items"] {
 						&[href*="direction=desc"] {
@@ -202,79 +196,78 @@ section {
 							}
 						}
 					}
-				}
-
-				a{
 					&[href*="mark-as-read"],
 					&[href*="mark-feed-as-read"] {
 						&:after {
 							content: "\f058";
 						}
 					}
-				}
-				a[href="?action=add"] {
-					&:after {
-						content: "\f067";
+					&[href="?action=add"] {
+						&:after {
+							content: "\f067";
+						}
 					}
-				}
-				a[href="?action=import"] {
-					&:after {
-						content: "\f093";
+					&[href="?action=import"] {
+						&:after {
+							content: "\f093";
+						}
 					}
-				}
-				a[href="?action=export"] {
-					&:after {
-						content: "\f019";
+					&[href="?action=export"] {
+						&:after {
+							content: "\f019";
+						}
+					}					
+					&[href="?action=refresh-all"] {
+						&:after {
+							content: "\f021";
+						}
 					}
-				}
-				a[href="?action=refresh-all"] {
-					&:after {
-						content: "\f021";
+					&[href="?action=confirm-flush-history"] {
+						&:after {
+							content: "\f014";
+						}
 					}
-				}
-				a[href="?action=confirm-flush-history"] {
-					&:after {
-						content: "\f014";
+					&[href="?action=feeds"] {
+						&:after {
+							content: "\f09e";
+						}
 					}
-				}
-				a[href="?action=feeds"] {
-					&:after {
-						content: "\f09e";
+					&[href="?action=config"] {
+						&:after {
+							content: "\f013";
+						}
 					}
-				}
-				a[href="?action=config"] {
-					&:after {
-						content: "\f013";
+
+					&[href="?action=help"] {
+						&:after {
+							content: "\f128";
+						}
 					}
-				}
-				a[href="?action=help"] {
-					&:after {
-						content: "\f128";
+					
+					&[href="?action=services"] {
+						&:after {
+							content: "\f1e0";
+						}
 					}
-				}
-				a[href="?action=services"] {
-					&:after {
-						content: "\f1e0";
+					&[href="?action=about"] {
+						&:after {
+							content: "\f129";
+						}
 					}
-				}
-				a[href="?action=about"] {
-					&:after {
-						content: "\f129";
+					&[href="?action=database"] {
+						&:after {
+							content: "\f1c0";
+						}
 					}
-				}
-				a[href="?action=database"] {
-					&:after {
-						content: "\f1c0";
+					&[href="?action=api"] {
+						&:after {
+							content: "\f0ec";
+						}
 					}
-				}
-				a[href="?action=api"] {
-					&:after {
-						content: "\f0ec";
-					}
-				}
-				a[href*="action=refresh-feed"] {
-					&:after {
-						content: "\f021";
+					&[href*="action=refresh-feed"] {
+						&:after {
+							content: "\f021";
+						}
 					}
 				}
 
