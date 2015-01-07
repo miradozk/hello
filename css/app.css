@@ -47,7 +47,7 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-.alert.alert-normal h3, .page-header h2, .page-section h2, .items article h2 a, #current-item > h1 {
+.alert.alert-normal h3, .page-header h2, .page-section h2, .items article h2 a, .item > h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1rem; }
@@ -62,7 +62,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-header nav li > a:before, .page-header ul li a, .items .item-menu li a:before, #current-item .item-infos li a.bookmark-icon {
+header nav li > a:before, .page-header ul li a, .items .item-menu li a:before, .item .item-infos li a.bookmark-icon {
   font-family: "FontAwesome"; }
 
 form {
@@ -315,6 +315,10 @@ section.page {
   background-color: #fFFFFF;
   margin-bottom: 15px;
   padding: 10px 20px; }
+  .items article[data-item-bookmark="0"] .bookmark:before {
+    content: "\f005"; }
+  .items article[data-item-bookmark="1"] .bookmark:before {
+    content: "\f006"; }
   .items article[data-item-status="read"] {
     background-color: rgba(153, 153, 153, 0.7); }
   .items article h2 {
@@ -327,8 +331,6 @@ section.page {
     .items article h2 a {
       color: #000;
       text-decoration: none; }
-    .items article h2 .bookmark-icon {
-      display: none; }
     .items article h2 .favicon {
       height: 16px;
       width: 16px; }
@@ -352,13 +354,13 @@ section.page {
       padding-left: 5px; }
     .items .item-menu li:first-child:before {
       display: none; }
+    .items .item-menu li:first-child a:before {
+      content: "\f09e"; }
     .items .item-menu li a {
       color: #008055;
       text-decoration: none; }
       .items .item-menu li a:before {
         margin-right: 2px; }
-      .items .item-menu li a:first-child:before {
-        content: "\f09e"; }
       .items .item-menu li a.original:before {
         content: "\f0ac"; }
       .items .item-menu li a[href*="action=confirm-remove-feed"]:before {
@@ -367,10 +369,6 @@ section.page {
         content: "\f044"; }
       .items .item-menu li a[href*="action=refresh-feed"]:before {
         content: "\f021"; }
-      .items .item-menu li a.bookmark:before {
-        content: "\f005"; }
-      .items .item-menu li a.bookmark[data-reverse-label*="remove"]:before {
-        content: "\f006"; }
       .items .item-menu li a[href*="action=mark-item-removed"]:before {
         content: "\f014";
         margin-right: 2px; }
@@ -411,20 +409,24 @@ section.page {
   #items-paging #next-page {
     float: right; }
 
-#current-item {
+.item {
   position: relative; }
-  #current-item > nav {
+  .item[data-item-bookmark="0"] .bookmark-icon:before {
+    content: "\f006"; }
+  .item[data-item-bookmark="1"] .bookmark-icon:before {
+    content: "\f005"; }
+  .item > nav {
     *zoom: 1; }
-    #current-item > nav:after {
+    .item > nav:after {
       content: "";
       display: table;
       clear: both; }
-    #current-item > nav.top {
+    .item > nav.top {
       display: block;
       float: right; }
-    #current-item > nav.bottom {
+    .item > nav.bottom {
       display: none; }
-    #current-item > nav span {
+    .item > nav span {
       -moz-box-shadow: 0 3px 0 #009966;
       -webkit-box-shadow: 0 3px 0 #009966;
       box-shadow: 0 3px 0 #009966;
@@ -435,31 +437,31 @@ section.page {
       display: block;
       padding: 5px 10px;
       color: #7f7f7f; }
-      #current-item > nav span a {
+      .item > nav span a {
         text-decoration: none;
         color: #009966; }
-      #current-item > nav span.nav-left {
+      .item > nav span.nav-left {
         float: left;
         margin-right: 10px; }
-      #current-item > nav span.nav-right {
+      .item > nav span.nav-right {
         float: right; }
-  #current-item > h1 {
+  .item > h1 {
     display: inline-block;
     float: left;
     line-height: 25px;
     margin-bottom: 20px;
     max-width: 82%; }
-    #current-item > h1 a {
+    .item > h1 a {
       color: #000;
       text-decoration: none;
       vertical-align: middle; }
-  #current-item .item-infos {
+  .item .item-infos {
     border-bottom: 1px solid #b2b2b2;
     border-top: 1px solid #b2b2b2;
     clear: both;
     display: block;
     padding: 0; }
-    #current-item .item-infos li {
+    .item .item-infos li {
       display: inline-block;
       vertical-align: middle;
       *vertical-align: auto;
@@ -467,30 +469,26 @@ section.page {
       *display: inline;
       font-size: 0.9rem;
       margin: 10px 0; }
-      #current-item .item-infos li:before {
+      .item .item-infos li:before {
         content: " / "; }
-      #current-item .item-infos li:first-child:before {
+      .item .item-infos li:first-child:before {
         display: none; }
-      #current-item .item-infos li a {
+      .item .item-infos li a {
         color: #009966;
         font-size: 0.9rem;
         text-decoration: none; }
-        #current-item .item-infos li a:hover {
+        .item .item-infos li a:hover {
           text-decoration: underline; }
-        #current-item .item-infos li a.bookmark-icon:before {
-          content: "\f006"; }
-        #current-item .item-infos li a.bookmark-icon[data-reverse-title*="remove"]:before {
-          content: "\f005"; }
-        #current-item .item-infos li a.bookmark-icon:hover {
+        .item .item-infos li a.bookmark-icon:hover {
           text-decoration: none; }
-  #current-item #item-content {
+  .item #item-content {
     padding: 10px 0;
     *zoom: 1; }
-    #current-item #item-content:after {
+    .item #item-content:after {
       content: "";
       display: table;
       clear: both; }
-    #current-item #item-content #item-content-enclosure {
+    .item #item-content #item-content-enclosure {
       display: none; }
 
 #item-content h1, #item-content h2, #item-content h3, #item-content h4 {
