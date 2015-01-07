@@ -301,11 +301,11 @@ section.page {
   margin-bottom: 15px;
   margin-top: 15px; }
 
-#page-counter, #nav-counter {
+#page-counter, #nav-counter, .items-count {
   margin: 0 3px; }
-  #page-counter:before, #nav-counter:before {
+  #page-counter:not(:empty):before, #nav-counter:not(:empty):before, .items-count:not(:empty):before {
     content: " ("; }
-  #page-counter:after, #nav-counter:after {
+  #page-counter:not(:empty):after, #nav-counter:not(:empty):after, .items-count:not(:empty):after {
     content: ") "; }
 
 .items article {
