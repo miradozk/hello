@@ -37,6 +37,9 @@ header {
 
 		li {
 			line-height: 30px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: lighten($theme-background-highlight, 75%);
 
 			&.active {
 				a {
@@ -51,7 +54,7 @@ header {
 					family: $ui-font-highlight;
 					weight: bold;
 				}
-
+				white-space: nowrap;
 				&:hover {
 					color:  $link-color-hover;
 				}

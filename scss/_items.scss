@@ -1,11 +1,13 @@
+.feed-parsing-error {
+  	visibility: hidden;
+}
 .items {
 	article {
-
 		@include box-shadow(0 3px 0 darken($theme-background-highlight, 10%));
 		background-color:  $theme-background-light;
 		margin-bottom: 15px;
 		padding: 10px 20px;
-
+		// Add/Remove to bookmark
 		&[data-item-bookmark="0"] {
 			.bookmark {
 				&:before {
@@ -13,7 +15,6 @@
 				}
 			}
 		}
-		
 		&[data-item-bookmark="1"] {
 			.bookmark {
 				&:before {
@@ -21,11 +22,22 @@
 				}
 			}
 		}
-		
+		// Item  read
 		&[data-item-status="read"] {
-			background-color: rgba(lighten(black,60%), .7);
+			background-color: $item-read-background;
 		}
-
+		// Item error
+		&[data-feed-error] {
+			background-color: $alert-error-background;
+			.feed-parsing-error {
+				 font-size: .8em;
+  				visibility: visible;
+			}
+		}
+		// Item disabled
+		&[data-feed-disabled="1"]{
+			background-color: $item-read-background;
+		}
 		h2 {
 			display: block;
 			margin-bottom:  5px;
