@@ -361,3 +361,8 @@ section {
 		background-color: $alert-warning !important;
 	}
 }
+
+.form-actions {
+	@extend .panel;
+	background-color: $theme-background-light;
+}

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400,300);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, h1, h2, h3, h4, h5, h6, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -17,13 +16,13 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-.alert.alert-normal h3, .page-header h2, .page-section h2, .items article h2 a, .item > h1 { font-family: "Roboto Slab", "Liberation Sans", serif; font-weight: 700; font-size: 1rem; }
+.alert.alert-normal h3, .page-header h2, .page-section h2, .items article h2 a, .item > h1 { font-family: "Liberation Sans", serif; font-weight: 700; font-size: 1rem; }
 
 .items article .preview { font-family: Helvetica, Arial, sans-serif; font-size: 0.9rem; }
 
-.page-section + section ul, .panel ul { list-style: square; margin-left: 30px; margin-right: 10px; }
+.page-section + section ul, .panel ul, .form-actions ul { list-style: square; margin-left: 30px; margin-right: 10px; }
 
-.page-section + section ul li, .panel ul li { margin: 5px 0; }
+.page-section + section ul li, .panel ul li, .form-actions ul li { margin: 5px 0; }
 
 h1, h2, h3, h4, h5, h6 { margin-top: 10px; }
 
@@ -66,7 +65,7 @@ header nav { margin: 20px auto; position: relative; width: 90%; }
 header nav > ul { margin-top: 30px; }
 header nav li { line-height: 30px; overflow: hidden; text-overflow: ellipsis; color: white; }
 header nav li.active a { color: #edbf47; }
-header nav li > a { color: white; margin-left: 5px; text-decoration: none; font-family: "Roboto Slab", "Liberation Sans", serif; font-weight: bold; white-space: nowrap; }
+header nav li > a { color: white; margin-left: 5px; text-decoration: none; font-family: "Liberation Sans", serif; font-weight: bold; white-space: nowrap; }
 header nav li > a:hover { color: #edbf47; }
 header nav li > a:before { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; color: white; font-weight: normal; margin-right: 10px; text-align: center; width: 24px; }
 header nav li > a[href="?action=unread"]:before { content: ""; }
@@ -89,7 +88,7 @@ section.page a { color: #009966; }
 .page-header ul { float: right; }
 .page-header ul li { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; text-align: center; }
 .page-header ul li a, .page-header ul li a:after { overflow: hidden; display: block; height: 25px; text-decoration: none; width: 25px; }
-.page-header ul li a { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 3px 0 #009966; -webkit-box-shadow: 0 3px 0 #009966; box-shadow: 0 3px 0 #009966; background-color: #f2f2f2; color: #008055; font-family: "Roboto Slab", "Liberation Sans", serif; position: relative; text-indent: -999px; }
+.page-header ul li a { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 3px 0 #009966; -webkit-box-shadow: 0 3px 0 #009966; box-shadow: 0 3px 0 #009966; background-color: #f2f2f2; color: #008055; font-family: "Liberation Sans", serif; position: relative; text-indent: -999px; }
 .page-header ul li a:after { left: 0; line-height: 25px; position: absolute; text-indent: 0; top: 0; z-index: 999; }
 .page-header ul li a[href*="action=unread"][href*="direction=asc"]:after, .page-header ul li a[href*="action=feed-items"][href*="direction=asc"]:after { content: "\f162"; }
 .page-header ul li a[href*="action=unread"][href*="direction=desc"]:after, .page-header ul li a[href*="action=feed-items"][href*="direction=desc"]:after { content: "\f163"; }
@@ -116,10 +115,12 @@ section.page a { color: #009966; }
 #page-counter:not(:empty):before, #nav-counter:not(:empty):before, .items-count:not(:empty):before { content: " ("; }
 #page-counter:not(:empty):after, #nav-counter:not(:empty):after, .items-count:not(:empty):after { content: ") "; }
 
-.panel { margin: 5px auto; padding: 10px; }
-.panel h3 { font-family: "Roboto Slab", "Liberation Sans", serif; font-size: .9rem; font-weight: 700; margin-bottom: 10px; }
+.panel, .form-actions { margin: 5px auto; padding: 10px; }
+.panel h3, .form-actions h3 { font-family: "Liberation Sans", serif; font-size: .9rem; font-weight: 700; margin-bottom: 10px; }
 .panel-default { background-color: #fFFFFF; }
 .panel-danger { background-color: #f6c443 !important; }
+
+.form-actions { background-color: #fFFFFF; }
 
 .feed-parsing-error { visibility: hidden; }
 
@@ -189,7 +190,7 @@ section.page a { color: #009966; }
 .item #item-content:after { content: ""; display: table; clear: both; }
 .item #item-content #item-content-enclosure { display: none; }
 
-#item-content h1, #item-content h2, #item-content h3, #item-content h4 { font-family: "Roboto Slab", "Liberation Sans", serif; padding: 15px 0 5px 0; }
+#item-content h1, #item-content h2, #item-content h3, #item-content h4 { font-family: "Liberation Sans", serif; padding: 15px 0 5px 0; }
 #item-content h1 { font-size: 1.5em; margin-left: 5px; }
 #item-content h2 { font-size: 1.4em; margin-left: 10px; }
 #item-content h3 { font-size: 1.3em; margin-left: 15px; }
