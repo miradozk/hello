@@ -167,21 +167,23 @@ section {
 				}
 				
 				a {
-					background-color: $button-background-grey;
-					color: darken($theme-background-highlight, 5%);
-					position: relative;
-					text-indent: -999px;
 					@include border-radius(5px);
 					@include box-shadow(0 3px 0 $theme-background-highlight);
-					@extend %awesome;
+					background-color: $button-background-grey;
+					color: darken($theme-background-highlight, 5%);
+					font-family: $ui-font-highlight;
+					position: relative;
+					text-indent: -999px;
+					
 
 					&:after {
-						position: absolute;
-						top: 0;
+						@extend %awesome;
 						left: 0;
 						line-height: 25px;
-						z-index: 999;
+						position: absolute;
 						text-indent: 0;
+						top: 0;
+						z-index: 999;
 					}
 					
 					&[href*="action=unread"],
@@ -297,6 +299,19 @@ section {
 	 			top: 15px;
 	 		}
 	 	}
+
+	 	+ section {
+	 		background-color: $theme-background-light;
+	 		padding: 10px;
+			
+			ul {
+				@extend %ul;
+
+				li {
+					@extend %li;
+				}
+			}	 		
+	 	}
 	 }
 
 }
@@ -318,4 +333,31 @@ section {
 }
 .items-count {
 	@extend #page-counter;
+}
+
+// Panel 
+.panel {
+	margin: 5px auto;
+	padding: 10px; 
+
+	h3 {
+		font-family: $ui-font-highlight;
+		font-size: .9rem;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	ul {
+		@extend %ul;
+
+		li {
+			@extend %li;
+		}
+	}
+
+	&-default {
+		background-color: $theme-background-light;		
+	}
+	&-danger {
+		background-color: $alert-warning !important;
+	}
 }

@@ -30,8 +30,7 @@
 		&[data-feed-error] {
 			background-color: $alert-error-background;
 			.feed-parsing-error {
-				 font-size: .8em;
-  				visibility: visible;
+				visibility: visible;
 			}
 		}
 		// Item disabled
@@ -44,12 +43,12 @@
 			
 			%commonChld {
 				display: inline-block;
+				vertical-align: middle;
 			}
 
 			a,
 			.favicon {
-				@extends %commonChld;
-				vertical-align: middle;
+				@extends %commonChld;				
 			}
 
 			a {
@@ -64,7 +63,12 @@
 			}
 			.feed-last-checked {
 				font-size:  .8em;
+				font-weight: normal;
 			}
+			.feed-parsing-error {
+				font-size: .8em;
+				font-weight: normal;
+			}			
 		}
 		.preview {
 			@extend %paragraph;
@@ -133,15 +137,15 @@
 					}	
 				}
 				
-				// Mark as Read 
+				// Mark as Unread 
 				&.mark {
 					&:before {
-						content: "\f05d";
+						content: "\f070";
 					}
-					// Mark as Unread
+					// Mark as read
 					&[data-action="mark-read"] {
 						&:before {
-							content: "\f058";
+							content: "\f06e";
 						}
 					}
 				}
