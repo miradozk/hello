@@ -16,6 +16,7 @@
   @extend %awesome;
   -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
+  margin-right: 10px;
 }
 @-webkit-keyframes spin {
   0% {
