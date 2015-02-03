@@ -1,0 +1,28 @@
+@import "bourbon/bourbon";
+
+@import "compass/utilities" ;
+
+@import "compass/css3";
+
+@import "compass/reset";
+
+html {
+	font-size: 100%;
+}
+body {
+	font-family: $arial;
+	line-height: 25px;
+}
+em {
+	font-style: italic;
+}
+b, strong {
+	font-weight: bold;
+}
+a {
+	&:hover,
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}

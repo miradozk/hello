@@ -1,0 +1,105 @@
+header {
+	background-color: $green-sea;
+
+	> nav {
+		display: block;
+
+		> ul,
+		> a {
+			display: block;
+		}
+		.logo {
+			color: $wet-asphalt;
+			font-family: $roboto-slab;
+			font-weight: 700;
+			padding: 10px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		li {
+			position: relative;
+			display: block;
+			padding: 5px 10px;
+
+			&:hover,
+			&.active {
+				background-color: $turquoise;
+
+				&:before {
+					background-color: $alizarin;
+				}
+			}
+			&:before {
+				bottom: 0; 
+				content: "";
+				display: block;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 3px;
+
+			}
+			a {
+				color: $light;
+				font-family: $roboto-slab;
+				font-weight: normal;
+				font-size: rem(16);
+				text-decoration: none;
+				vertical-align: middle;
+
+				&:before {
+					@include inline-block(middle);
+					color: white;
+					font-family: FontAwesome;
+					font-weight: normal;
+					margin-right: 10px;
+					text-align: center;
+					width: 24px;
+				}
+				// Inbox
+				&[href="?action=unread"] {
+					&:before {
+						content: "\f01c" ;
+					}
+				}
+				// Bookmark
+				&[href="?action=bookmarks"] {
+					&:before {
+						content: "\f02e" ;
+					}
+				}
+				// History
+				&[href="?action=history"] {
+					&:before {
+						content: "\f1da" ;
+					}
+				}
+				// Subscription
+				&[href="?action=feeds"] {
+					&:before {						
+						content: "\f09e" ;
+					}
+				}
+				// Preferences
+				&[href="?action=config"] {
+					&:before {
+						content: "\f1de" ;
+					}
+				}
+				// Quit
+				&[href="?action=logout"] {
+					&:before {
+						content: "\f08b" ;
+					}
+				}
+				// Mobile menu
+				&[href="?action=more"] {
+					&:before {
+						content: "\f009";
+					}
+				}
+			}
+		}
+	}
+
+}

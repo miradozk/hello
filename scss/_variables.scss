@@ -1,0 +1,31 @@
+// Flat UI Colors
+$turquoise:  #1ABC9C;
+$green-sea: #16A085;
+$emerald: #2ECC71;
+$nephritis: #27AE60;
+$alizarin: #E74C3C;
+$pomegranate: #C0392B;
+$clouds: #ECF0F1;
+$silver: #CBD0D3;
+$concrete: #95A5A6;
+$asbestos: #7F8C8D;
+$light: #FFFFFF;
+$dark: #000000;
+$midnight-blue: #2C3E50;
+$wet-asphalt: #34495E;
+$sun-flower: #F1C40F;
+$orange: #F39C12;
+$carrot: #E67E22;
+$pumpkin: #D35400;
+
+// Variant
+$dark-text: darken($midnight-blue, 10%);
+// Sizes
+$toolbar-height: 40px;
+$sidebar-width: 200px;
+
+//Fonts 
+$roboto-slab: 'Roboto Slab', Arial, sans-serif;
+$liberation-sans:  "Liberation Sans", FreeSans, sans-serif;
+$arial: Arial, Tahoma, sans-serif;
+$times: 'New Times Roman', Times, 'Liberation Serif', serif;
