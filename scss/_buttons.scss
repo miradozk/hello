@@ -1,0 +1,21 @@
+.btn {
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $ui-font-content;
+	font-size: 1rem;
+	line-height: 24px;
+	padding: 5px 10px;
+	text-decoration: none;
+	vertical-align: middle;
+
+	&-red {
+		color: $alert-error-color !important;
+		@include flat-box($alert-error, $alert-error-background, 5px);
+		
+	}
+	&-blue {
+		color: $alert-success-color !important;
+		@include flat-box($theme-background-highlight, $button-background-grey, 5px);
+	}
+}
