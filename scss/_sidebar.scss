@@ -8,13 +8,18 @@ header {
 		> a {
 			display: block;
 		}
-		.logo {
+		.logo {			
 			color: $wet-asphalt;
 			font-family: $roboto-slab;
 			font-weight: 700;
 			padding: 10px;
 			text-decoration: none;
 			text-transform: uppercase;
+
+			span {
+				//color: lighten($green-sea, 10%);
+				margin-left: 2px;
+			}
 		}
 		li {
 			position: relative;
