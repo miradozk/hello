@@ -15,4 +15,5 @@
 	@include border-radius($radius);
 	@include box-shadow(0 3px 0 darken($shadowColor, 10%));
 	background-color: $buttonColor;
+	@include transition(all .5s ease-in-out 0s);
 }

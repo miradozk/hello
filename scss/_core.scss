@@ -1,11 +1,5 @@
 body {
 	background-color: $theme-background-main;
-	
-	font: {
-		family: $ui-font-content;
-		weight: normal;
-	}
-	line-height: 25px;
 
 	> header,
 	> section {
@@ -20,108 +14,10 @@ body {
 }
 // Sidebar
 header {
-	background-color: $theme-background-highlight;
 	left: 0;
 	position: fixed;
 	overflow: hidden;
 	width: px2cent(200px);
-
-	nav {
-		margin: 20px auto;
-		position: relative;
-		width: 90%;
-
-		> ul {
-			margin-top: 30px;
-		}
-
-		li {
-			line-height: 30px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			color: lighten($theme-background-highlight, 75%);
-
-			&.active {
-				a {
-					color: $link-color-hover;
-				}
-			}
-			> a {
-				color: lighten($theme-background-highlight, 75%);
-				margin-left: 5px;
-				text-decoration: none;
-				font: {
-					family: $ui-font-highlight;
-					weight: bold;
-				}
-				white-space: nowrap;
-				&:hover {
-					color:  $link-color-hover;
-				}
-
-				&:before {
-					@extend %awesome;
-					@include inline-block(middle);
-					color: white;
-					font-weight: normal;
-					margin-right: 10px;
-					text-align: center;
-					width: 24px;
-				}
-
-				&[href="?action=unread"] {
-					&:before {
-						content: "\f1ea" ;
-					}
-				}
-				&[href="?action=bookmarks"] {
-					&:before {
-						content: "\f02e" ;
-					}
-				}
-				&[href="?action=history"] {
-					&:before {
-						content: "\f1da" ;
-					}
-				}
-				&[href="?action=feeds"] {
-					&:before {						
-						content: "\f09e" ;
-					}
-				}
-				&[href="?action=config"] {
-					&:before {
-						content: "\f1de" ;
-					}
-				}
-				&[href="?action=logout"] {
-					&:before {
-						content: "\f08b" ;
-					}
-				}
-				&[href="?action=more"] {
-					&:before {
-						content: "\f009";
-					}
-				}
-			}
-		}
-	}
-
-	.logo {
-
-		color: white;
-		display: block;
-		font-size: 1.6em;
-		margin: 0 auto;
-		text-align: center;
-		text-decoration: none;
-		width: 70%;
-
-		span {
-			color: lighten($logo-basecolor, 40%);
-		}
-	}
 }
 // Main container
 section {
