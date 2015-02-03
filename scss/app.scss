@@ -1,8 +1,6 @@
-@import "compass/utilities" ;
+@import "variables";
 
-@import "compass/css3";
-
-@import "compass/reset";
+@import "reset";
 
 @import "common";
 
@@ -20,10 +18,14 @@
 
 @import "core";
 
+@import "sidebar";
+
 @import "items";
 
 @import "single";
 
 @import "login";
+
+@import "buttons";
 
 @import "queries";
