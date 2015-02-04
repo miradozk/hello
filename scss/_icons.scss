@@ -6,31 +6,15 @@
   font-style: normal; } 
 
 // Synchronisation des flux
-.loading-icon:before {
-	content: "\f1ce";
-	color: $theme-background-highlight;
-	font-family: FontAwesome;
-	-webkit-animation: spin 2s infinite linear;
-	animation: spin 2s infinite linear;
-	margin-right: 10px;
-}
-@-webkit-keyframes spin {
-	0% {	
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg);
-	}
-}
-@keyframes spin {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg);
+.loading-icon {
+	position: relative;
+	&:before {
+		@include animation(loader 4.0s infinite linear);
+		background-color: $alizarin;
+		bottom: -5px;
+		content: '';
+		font-family: FontAwesome;
+		height: 2px;
+		position: absolute;
 	}
 }

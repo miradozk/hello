@@ -21,12 +21,12 @@ form {
 		}
 	}
 	%input-common {
+		@include box-shadow(none);
+		background-color: $light;
+		border: 1px solid $silver;
 		color: $dark;
 		font-family: $helvetica;
 		font-size: rem(16);
-		border: 1px solid $silver;
-		@include box-shadow(none);
-		background-color: $light;
 		margin-bottom: 10px;
 		@include placeholder {
 			color: $concrete;
@@ -42,41 +42,74 @@ form {
 	input[type="password"] ,
 	input[type="text"],
 	input[type="url"]  {
+		@extend %input-common;
 		height: 30px;
 		line-height: 30px;
+		min-width: 280px;
 		padding-left: 10px;
 		padding-right: 10px;
-		min-width: 280px;
-		@extend %input-common;
 	}
 
+	/* -- Sous chromium seulement 
+	input[type="radio"],
 	input[type="checkbox"] {
-		border: 1px solid $silver;
-		height: 21px;
-		position: relative;
-		width: 21px;
-		margin: 0;
-		vertical-align: middle;
+		@include box-shadow(none);
+		border: none;
 		cursor: pointer;
+		height: 21px;
+		margin: 0;
+		position: relative;
+		vertical-align: middle;
+		width: 21px;
 
+		&:before {
+			color: $concrete;
+			display: block;
+			font-family: FontAwesome;
+			font-size: rem(18);
+			height: 100%;
+			left: 0;
+			line-height: 21px;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 100%;	
+		}
 		&:checked {
 			&:before {
-				background-color: $concrete;
-				color: $green-sea;
-				content: "\f00c";
-				display: block;
-				font-family: FontAwesome;
-				height: 100%;
-				line-height: 21px;
-				left: 0;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 100%;
+				color: $midnight-blue;					
+			}
+		}
+	 }
+	 
+	input[type="checkbox"] {
+		&:before {			
+			content: "\f096";
+
+		}				
+		&:checked {
+			&:before {				
+				content: "\f046";
 			}
 		}
 	}
-
+	input[type="radio"] {
+		&:before {			
+			content: "\f10c";
+		}
+		&:checked {
+			&:before {			
+				content: "\f192";
+			}			
+		}
+	}
+	*/
+	input[type="radio"] {
+		@include appearance(radio);
+	}
+	input[type="checkbox"] {	
+		@include appearance(checkbox);
+	}
 	select {
 		@extend %input-common;
 		line-height: 30px;

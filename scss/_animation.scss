@@ -1,0 +1,19 @@
+@include keyframes(spin) {
+	from {
+		@include transform(rotate(0deg));
+	}
+	to {
+		@include transform(rotate(359deg));
+	}
+}
+
+@include keyframes(loader) {
+	from {
+		width: 0;
+		opacity: 0;
+	}
+	to {
+		width: 100%;
+		opacity: 1;
+	}
+}
