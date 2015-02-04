@@ -12,6 +12,12 @@
 			text-decoration: underline;
 		}
 	}
+	@include hn();
+
+	ul {
+		list-style-type: square;
+		margin-left: 30px;
+	}
 
 	&.alert-error {
 		background-color: $alizarin;
@@ -23,15 +29,11 @@
 	&.alert-success {
 		background-color: $turquoise;
 		color: $clouds;
-
 	}
-
 	&.alert-normal {
-		@include hn();
-
-		ul {
-			list-style-type: square;
-			margin-left: 30px;
-		}
+	}
+	&.alert-info {
+		background-color: $peter-river;
+		color: $clouds;
 	}
 }

@@ -7,6 +7,10 @@
 	}
 	%toolbar-active {
 		background-color: $clouds;
+		color: $alizarin;
+		&:after {
+			@include flat-box($alizarin, $light, 5px);
+		}
 	}
 	// Les containers
 	> * {

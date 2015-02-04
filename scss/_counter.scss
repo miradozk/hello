@@ -1,0 +1,23 @@
+#page-counter {
+ 	margin: 0 3px;
+
+ 	&:not(:empty):before {
+ 		content: " (";
+ 	}
+ 	&:not(:empty):after {
+ 		content: ") ";
+ 	}	
+}
+#nav-counter {
+	@extend #page-counter;
+}
+.items-count {
+	// @include border-radius(px);
+	background-color: $green-sea;
+	color: $light;
+	font-family: $helvetica;
+	font-size: rem(14);
+	font-weight: normal;
+	padding: 5px;
+	vertical-align: middle;
+}

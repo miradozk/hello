@@ -13,14 +13,15 @@
 	@include transition(all 1.0s ease-in-out);
 	text-decoration: none;
 
-	&.btn-blue {
+	&.btn-blue,
+	&.btn-red  {
 		@include flat-box($green-sea, $clouds, 5px);
 		color: $green-sea;
 		&:hover {
 			color: $asbestos;
 		}
 	}
-
+	/* -- 
 	&.btn-red {
 		@include flat-box($alizarin, $clouds, 5px);
 		color: $alizarin;
@@ -28,7 +29,7 @@
 			color: $asbestos;
 		}
 	}
-
+	*/
 	~ a {
 		font-family: $helvetica;
 		font-size: rem(14);

@@ -17,3 +17,89 @@
 		margin: 10% 20px 20px 40px;
 	}
 }
+
+@media only screen and (max-width: 1023px) {
+	.hide-mobile {
+		display: none !important;
+	}
+	.hide-desktop {
+		display: block;
+	}
+
+	body {
+		> header,
+		> section {
+			position: relative;
+			width: 100%;
+		}
+		> section {
+
+		}
+	}
+
+	header {
+		margin-bottom: 10px;
+		> nav {
+			@include pie-clearfix;
+			li {
+				@include box-sizing(border-box);
+				display: block;
+				float: left;
+				width: 50%;
+				&:before {
+					height: 3px;
+					right: 0;
+					top: initial;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.page {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 0;
+		width: auto;
+	}
+
+	.page-header {
+		> h2 {
+			margin-bottom: 10px;
+		}
+		> nav {
+			position: relative;
+			li {
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	[data-item-page="feeds"] {
+		.page-header {
+			> ul {
+				position: relative;
+				li {
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	form {
+		input[type="email"],
+		input[type="password"] ,
+		input[type="number"] ,
+		input[type="text"],
+		input[type="url"]  {
+			min-width: 260px;
+		}
+		select {
+			min-width: 280px;
+		}
+	}
+}
