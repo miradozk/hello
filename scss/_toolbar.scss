@@ -1,0 +1,191 @@
+.page-header {
+	position: relative;
+	margin-bottom: 10px;
+	
+	%toolbar-child {
+		@include inline-block(middle);
+	}
+	%toolbar-active {
+		background-color: $clouds;
+	}
+	// Les containers
+	> * {
+		@extend %toolbar-child;
+	}
+	> %toolbar-container {
+		@extend %toolbar-child;
+		position: absolute;
+		right: 0;
+		top: 0;
+		
+		ul {
+			position: relative;
+		}
+	}
+	 h2 {
+		color: $midnight-blue;
+		font-family: $roboto-slab;
+		font-size: rem(16);
+		text-transform: uppercase;
+	}
+
+	ul {
+		@extend %toolbar-container;
+		li {
+			@extend %toolbar-child;
+			text-align: center;
+			margin-left: 10px;
+
+			&.active {
+				a {
+					&:after {
+						@extend %toolbar-active;
+					}
+				}
+			}
+		}
+	}
+
+	nav {
+		@extend %toolbar-container;
+	}
+	// Les boutons
+	a {
+		color: $green-sea;
+		display: block;
+		height: 36px;
+		overflow: hidden;
+		position: relative;
+		text-decoration: none;
+		text-indent: -999px;
+		width: 32px;
+
+		&:after {
+			@include flat-box($green-sea, $light, 5px);
+			display: block;
+			font-family: FontAwesome;
+			left: 0;
+			line-height: 30px;
+			padding: 0;
+			position: absolute;
+			text-indent: 0;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+		}
+
+		&:hover {
+			&:after {
+				@extend %toolbar-active;
+			}
+		}
+		// Tri
+		&[href*="direction=asc"] {
+			&:after {
+				content: "\f162";
+			}
+		}					
+		&[href*="direction=desc"] {
+			&:after {
+				content: "\f163";
+			}
+		}
+		// Marquer comme lus
+		&[href*="mark-as-read"],
+		&[href*="mark-feed-as-read"] {
+			&:after {
+				content: "\f06e";
+			}
+		}
+		// Ajouter flux rss
+		&[href="?action=add"] {
+			&:after {
+				content: "\f067";
+			}
+		}
+		// Importer opml
+		&[href="?action=import"] {
+			&:after {
+				content: "\f093";
+			}
+		}
+		// exporter opml
+		&[href="?action=export"] {
+			&:after {
+				content: "\f019";
+			}
+		}	
+		// mettre à jour les flux rss				
+		&[href="?action=refresh-all"] {
+			&:after {
+				content: "\f021";
+			}
+		}
+		// Nettoyer historique
+		&[href="?action=confirm-flush-history"] {
+			&:after {
+				content: "\f014";
+			}
+		}
+		// Abonnements
+		&[href="?action=feeds"] {
+			&:after {
+				content: "\f09e";
+			}
+		}
+		// Configuration
+		&[href="?action=config"] {
+			&:after {
+				content: "\f013";
+			}
+		}
+		// Aide
+		&[href="?action=help"] {
+			&:after {
+				content: "\f128";
+			}
+		}
+		// Services externes
+		&[href="?action=services"] {
+			&:after {
+				content: "\f1e0";
+			}
+		}
+		// A propos de miniflux
+		&[href="?action=about"] {
+			&:after {
+				content: "\f129";
+			}
+		}
+		// Base de données
+		&[href="?action=database"] {
+			&:after {
+				content: "\f1c0";
+			}
+		}
+		// API (jsonrpc, bookmark, fever)
+		&[href="?action=api"] {
+			&:after {
+				content: "\f084";
+			}
+		}
+		// Mettre à jour flux RSS
+		&[href*="action=refresh-feed"] {
+			&:after {
+				content: "\f021";
+			}
+		}
+		// Console de debugage
+		&[href*="action=console"] {
+			&:after {
+				content: "\f120";
+			}
+		}
+		// Vider console de debugage
+		&[href*="action=flush-console"] {
+			&:after {
+				content: "\f12d";
+			}
+		}	
+	}
+}

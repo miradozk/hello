@@ -17,3 +17,15 @@
 	background-color: $buttonColor;
 	@include transition(all .5s ease-in-out 0s);
 }
+
+@mixin hn(){
+	$size: 28;
+	@for $i from 1 through 6   {
+		h#{$i} {
+			$size: $size - 2;
+			font-size: rem($size);
+			font-weight: normal;
+			font-family: $roboto-slab;
+		}
+	}
+}

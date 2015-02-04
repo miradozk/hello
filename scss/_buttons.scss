@@ -1,21 +1,37 @@
 .btn {
-	border: none;
+	@include appearance(none);
+	@include inline-block(middle);
+	height: 36px;
+	line-height: 30px;
+	border: 0 solid transparent;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: $helvetica;
+	font-size: rem(14);
+	font-weight: bold;
 	cursor: pointer;
-	display: inline-block;
-	font-family: $ui-font-content;
-	font-size: 1rem;
-	line-height: 24px;
-	padding: 5px 10px;
+	@include transition(all 1.0s ease-in-out);
 	text-decoration: none;
-	vertical-align: middle;
 
-	&-red {
-		color: $alert-error-color !important;
-		@include flat-box($alert-error, $alert-error-background, 5px);
-		
+	&.btn-blue {
+		@include flat-box($green-sea, $clouds, 5px);
+		color: $green-sea;
+		&:hover {
+			color: $asbestos;
+		}
 	}
-	&-blue {
-		color: $alert-success-color !important;
-		@include flat-box($theme-background-highlight, $button-background-grey, 5px);
+
+	&.btn-red {
+		@include flat-box($alizarin, $clouds, 5px);
+		color: $alizarin;
+		&:hover {
+			color: $asbestos;
+		}
+	}
+
+	~ a {
+		font-family: $helvetica;
+		font-size: rem(14);
+		color: $green-sea;
 	}
 }

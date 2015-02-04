@@ -1,0 +1,51 @@
+%bottom-menu {
+	float: right;
+	@include inline-block(middle);
+	a {
+		@include inline-block(middle);
+		font-family: FontAwesome;
+		height: 36px;
+		width: 30px;
+		position: relative;
+		overflow: hidden;
+		color: $green-sea;
+		
+
+		&:before {
+			text-align: center;
+			width: 100%;
+			line-height: 30px;
+			@include flat-box($green-sea, $light, 5px);
+			@include inline-block(middle);
+		}			
+		&:hover {
+			&:before {
+				background-color: $clouds;
+			}
+		}
+
+		// Mark as read 
+		&[data-action="mark-all-read"] {
+			&:before { 
+				content: "\f06e";
+			}
+		}
+	}	
+}
+#bottom-menu {
+	@extend %bottom-menu;
+	margin-left: 10px;
+}
+#items-paging {
+	@extend %bottom-menu;
+	#next-page {
+		&:before {
+			content: "\f105";
+		}
+	}
+	#previous-page {
+		&:before {
+			content: "\f104";
+		}
+	}
+}

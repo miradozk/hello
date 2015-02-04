@@ -55,6 +55,7 @@
 
 	> h1 {
 		a {
+			color: $green-sea;
 			font-family: $roboto-slab;
 			font-size: rem(28);
 			font-weight: 300;
@@ -220,8 +221,13 @@
 		}
 
 		p {
-			line-height: 1.4;
+			line-height: 27px;
 			margin-bottom: 20px;
+		}
+
+		img {
+			display: block;
+			max-width: 96%;
 		}
 	}
 }

@@ -1,53 +1,112 @@
-form {
-	background-color: $theme-background-light;
-	padding: 10px;
-	
-	input,
-	button,
-	textarea,
-	select {
-		font-family: $ui-font-content;
-		font-size: 1em;
-		color: darken($button-background-grey, 60%);
-	}
-
-	input,
-	textarea,
-	select {
-		background-color: white;
-		border: 1px solid $button-background-grey;
-		@include border-radius(5px);
-		padding: 5px;
-	
-
-		&:focus {
-
-		}
-	}
-	label,
-	input,
-	select {
-		@include inline-block(middle);
-		margin: {
-			bottom: 5px;
-		}
-	}
-	label[for*="form-"] {
-		width: px2cent(360px);
-	}	
-	input[type="submit"],
-	button[type="button"],
-	button[type="submit"] {
-		background-color: darken($theme-background-highlight, 1%);
-		color: $button-background-grey;
-		@include border-radius(5px);
-		cursor: pointer;
+.page-header {
+	+ form {
+		background-color: $light;
 		padding: 10px;
-		border: 1px solid $button-background-grey;
+	}
+}
+form {
+	label {
+		font-family: $helvetica;
+		font-size: rem(16);
+		color: $dark;
+		display: block;
+	}
+	input ,
+	select {
+		@include appearance(none);
+		&:focus,
+		&:hover,
+		&:active {
+			outline: none;
+		}
+	}
+	%input-common {
+		color: $dark;
+		font-family: $helvetica;
+		font-size: rem(16);
+		border: 1px solid $silver;
+		@include box-shadow(none);
+		background-color: $light;
+		margin-bottom: 10px;
+		@include placeholder {
+			color: $concrete;
+		}
+		&:focus,
+		&:hover,
+		&:active {
+			border-color: $concrete;
+		}
 	}
 
-	ul {
-		list-style-type: square;
-		margin: 10px 40px;
+	input[type="email"],
+	input[type="password"] ,
+	input[type="text"],
+	input[type="url"]  {
+		height: 30px;
+		line-height: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		min-width: 280px;
+		@extend %input-common;
+	}
+
+	input[type="checkbox"] {
+		border: 1px solid $silver;
+		height: 21px;
+		position: relative;
+		width: 21px;
+		margin: 0;
+		vertical-align: middle;
+		cursor: pointer;
+
+		&:checked {
+			&:before {
+				background-color: $concrete;
+				color: $green-sea;
+				content: "\f00c";
+				display: block;
+				font-family: FontAwesome;
+				height: 100%;
+				line-height: 21px;
+				left: 0;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	select {
+		@extend %input-common;
+		line-height: 30px;
+		min-width: 300px;
+		padding-left: 5px;
+		padding-right: 5px;
+		@include box-sizing(border-box);
+		position: relative;
+	}
+	@include hn();
+}
+
+
+.form-help {
+	font-family: $helvetica;
+	font-size: rem(14);
+	color: $alizarin;
+}
+
+.form-actions {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.form-errors {
+	list-style-type: square;
+	margin-left: 30px;
+	li {
+		font-family: $helvetica;
+		font-size: rem(14);
+		color: $alizarin;
 	}
 }

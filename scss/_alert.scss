@@ -1,47 +1,37 @@
 .alert {
-	padding: 5px 10px;
-	border: 1px solid $button-background-grey;
-	margin: 10px 0;
-	font-size: 1em;	
+	font-family: $helvetica;
+	font-size: rem(15);
+	padding: 10px;
+	margin-bottom: 10px;
+
+	a {
+		color: $green-sea;
+		text-decoration: none;
+		&:hover {
+			color: $emerald;
+			text-decoration: underline;
+		}
+	}
 
 	&.alert-error {
-		background-color: $alert-error-background;
-		color: $alert-error-color;
-	}
-	&.alert-normal {
-		background-color: $theme-background-light;
-		border-width: 0px;
-		padding: {
-			top: 10px;
-			bottom: 10px;
+		background-color: $alizarin;
+		color: $light;
+		a {
+			color: $sun-flower;
 		}
-		h3 {
-			@extend %title;
-		}
-		ul {
-			list-style-type: square;
-			margin: 10px 40px;
-		}
-	}
-	&.alert-info {
-		background-color: $alert-info-background;
-		color: $alert-info-color;		
 	}
 	&.alert-success {
-		background-color: $alert-success-background;
-		color: $alert-success-color;	
-		border-color: darken($theme-background-highlight, 25%);
+		background-color: $turquoise;
+		color: $clouds;
+
 	}
-	&#shortcuts {
-		li {
-			strong {
-				&:before {
-					content: " ' ";
-				}
-				&:after {
-					content: " ' ";
-				}
-			}
+
+	&.alert-normal {
+		@include hn();
+
+		ul {
+			list-style-type: square;
+			margin-left: 30px;
 		}
 	}
 }

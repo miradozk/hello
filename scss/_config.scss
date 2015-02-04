@@ -1,0 +1,27 @@
+[data-item-page="config"] {
+	.page-header {
+		+ section {
+			background-color: $light;
+			padding: 10px;
+		}
+		+ pre {
+			max-width: 100%;
+			overflow: hidden;
+			background-color: $midnight-blue;
+			@include box-sizing(border-box);
+			padding: 10px;
+			color: $clouds; 
+		}
+	}
+	.page-section {
+		h2 {
+			color: $midnight-blue;
+			font-family: $roboto-slab;
+			font-size: rem(16);
+			text-transform: uppercase;			
+		}
+	}
+	a {
+		color: $green-sea;
+	}
+}

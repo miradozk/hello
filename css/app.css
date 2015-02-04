@@ -235,6 +235,9 @@ header > nav li a[href="?action=logout"]:before { content: ""; }
 /* line 102, ../scss/_sidebar.scss */
 header > nav li a[href="?action=more"]:before { content: "\f009"; }
 
+/* line 1, ../scss/_toolbar.scss */
+.page-header { position: relative; }
+
 /* line 1, ../scss/_items.scss */
 .items { background-color: #FFFFFF; }
 

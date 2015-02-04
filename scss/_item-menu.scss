@@ -1,0 +1,93 @@
+.item-menu {
+	%item-menu-child {
+		@include inline-block(middle);
+	}
+
+	li {
+		@extend %item-menu-child;
+		color: $asbestos;
+		font-family: $helvetica;
+		font-size: rem(14);
+
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+		&:before {
+			@extend %item-menu-child;
+			content: "|";
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+
+	a {
+		color: $asbestos;
+		text-decoration: none;
+		vertical-align: middle;
+
+		&:hover{
+			color: $alizarin;
+		}
+		&:before {
+			@extend %item-menu-child;
+			font-family: FontAwesome;
+			margin-right: 5px;
+		}
+
+		// Source
+		&[href^="?action=feed-items"] {
+			&:before {
+				content: "\f09e";
+			}
+		}
+		// Lien de l'article
+		&.original {
+			&:before { 
+				content: "\f08e";
+			}
+		}
+		// Bookmark
+		&.bookmark {
+			&:before { 
+				content: "\f005";
+			}
+			&[data-reverse-label*="remove"] {
+				&:before {
+					content: "\f006";
+				}
+			}
+		}
+		// Supprimer
+		&.delete {
+			&:before { 
+				content: "\f014";
+			}
+		}
+		//  Marquer comme lu
+		&.mark {
+			&:before { 
+				content: "\f06e";
+			}
+			&[data-action="mark-unread"] {
+				&:before {
+					content: "\f070";
+				}
+			}
+		}
+		// Editr 
+		&[href^="?action=edit-feed"] {
+			&:before {
+				content: "\f044";
+			}
+		}
+		// Actualiser le flux rss
+		&[data-action="refresh-feed"],
+		&[href^="?action=edit-feed"] {
+			&:before {
+				content: "\f021";
+			}
+		}
+	}
+}

@@ -1,7 +1,134 @@
 .items {
-	background-color: $light;
-	
-	article {
+	@include pie-clearfix;
 
+	%article-child {
+		@include inline-block(middle);
+	}
+	%article-indicator-icon {
+		@extend %article-child;
+		font-family: FontAwesome;
+		font-size: rem(12);
+		margin-right: 5px;
+		&:after {
+			@extend %article-child;
+		}
+	}
+
+	article {
+		// Article lus / desactiver
+		&[data-feed-disabled="1"],
+		&[data-item-status="read"] {
+			background-color: $silver;
+
+			// Icones bookmark et as read
+			.read-icon {
+				@extend %article-indicator-icon ;
+				&:after {
+					content: "\f06e";
+				}
+			}
+		}
+		// Article bookmark
+		&[data-item-bookmark="1"] {
+			.bookmark-icon  {
+				@extend %article-indicator-icon;
+				&:after {
+					content: "\f005";
+				}
+			}
+		}
+		// Erreur de synchronisation
+		&[data-feed-error] {
+			background-color: lighten($pomegranate, 40%);
+		}
+	}
+
+	// Article non-lus
+	article {
+		@include box-sizing(border-box);
+		@include transition(all 1.0s ease-in-out);
+		background-color: $light;
+		border-bottom: 2px solid $green-sea;
+		cursor: pointer;
+		margin-bottom: 10px;
+		padding: 10px;
+
+		&:hover {
+			background-color: $clouds;
+			border-bottom-color: $alizarin;
+		}
+
+		> h2 {
+			padding: 0;
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: 0;
+			margin-bottom: 5px;
+
+			// Icones bookmark et as read
+			.bookmark-icon,
+			.read-icon {
+				display: none;
+			}
+
+			// Favicon
+			.favicon {
+				@include inline-block(middle);
+				border: none;
+				height: 16px;
+				width: 16px;
+			}
+			// Titre
+			a {
+				// @include inline-block(middle);
+				vertical-align: middle;
+				color: $green-sea;
+				font-family: $roboto-slab;
+				font-weight: normal;
+				font-size: rem(18);
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			// Nombre d'item non lus 
+			.items-count {
+				color: $concrete;
+				font-size: rem(18);
+				font-family: $helvetica;
+				font-weight: bold;
+				vertical-align: middle;
+			 	&:not(:empty):before {
+			 		content: " (";
+			 	}
+			 	&:not(:empty):after {
+			 		content: ") ";
+			 	}
+			}
+			// Date check
+			.feed-last-checked,
+			.feed-parsing-error {
+				font-family: $helvetica;
+				font-size: rem(14);
+				font-weight: normal;
+			}
+			.feed-last-checked {
+				color: $orange;
+			}
+			// Erreur sur dernier check
+			.feed-parsing-error {
+				color: $pomegranate;
+			}
+		}
+
+		> .preview {
+			font-family: $helvetica;
+			font-size: rem(16);
+			line-height: 27px;
+		}
+
+		> .item-menu {
+
+		}
 	}
 }
