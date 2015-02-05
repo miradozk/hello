@@ -1,5 +1,5 @@
 body {
-	background-color: $theme-background-main;
+	background-color: $clouds;
 
 	> header,
 	> section {
@@ -11,92 +11,44 @@ body {
 		overflow: auto;
 		position: absolute;
 	}
-}
-// Sidebar
-header {
-	left: 0;
-	position: fixed;
-	overflow: hidden;
-	width: px2cent(200px);
-}
-// Main container
-section {
-	&.page {
-		right: 0;
-		width: px2cent( (1366px - 250px));
-		padding: 10px 20px;
 
+
+	> header {
+		left: 0;
+		overflow: hidden;
+		position: fixed;
+		width: px2cent(220px);
 	}
 }
+
 .page {
-	// Toolbar
-
-
-	 &-section {
-	 	h2 {
-	 		@extend %title;
-	 		margin: {
-	 			bottom: 15px;
-	 			top: 15px;
-	 		}
-	 	}
-
-	 	+ section {
-	 		background-color: $theme-background-light;
-	 		padding: 10px;
-			
-			ul {
-				@extend %ul;
-
-				li {
-					@extend %li;
-				}
-			}	 		
-	 	}
-	 }
+	padding: 10px 20px;
+	right: 0;
+	width: px2cent( (1366px - 270px));
 }
-// Counters
-#page {
-	 &-counter {
-	 	margin: 0 3px;
 
-	 	&:not(:empty):before {
-	 		content: " (";
-	 	}
-	 	&:not(:empty):after {
-	 		content: ") ";
-	 	}
-	 }	
-}
-#nav-counter {
-	@extend #page-counter;
-}
-.items-count {
-	@extend #page-counter;
-}
-// Panel 
-.panel {
-	margin: 5px auto;
-	padding: 10px; 
+/*
+.page-section {
+ 	h2 {
+ 		@extend %title;
+ 		margin: {
+ 			bottom: 15px;
+ 			top: 15px;
+ 		}
+ 	}
 
-	h3 {
-		font-family: $ui-font-highlight;
-		font-size: .9rem;
-		font-weight: 700;
-		margin-bottom: 10px;
-	}
-	ul {
-		@extend %ul;
+ 	+ section {
+ 		background-color: $theme-background-light;
+ 		padding: 10px;
+		
+		ul {
+			@extend %ul;
 
-		li {
-			@extend %li;
-		}
-	}
-
-	&-default {
-		background-color: $theme-background-light;		
-	}
-	&-danger {
-		background-color: $alert-warning !important;
-	}
+			li {
+				@extend %li;
+			}
+		}	 		
+ 	}
 }
+*/
+

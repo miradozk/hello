@@ -44,65 +44,9 @@ header {
 				width: 3px;
 
 			}
-			a {
-				color: $light;
-				font-family: $roboto-slab;
-				font-weight: normal;
-				font-size: rem(16);
-				text-decoration: none;
-				vertical-align: middle;
 
-				&:before {
-					@include inline-block(middle);
-					color: white;
-					font-family: FontAwesome;
-					font-weight: normal;
-					margin-right: 10px;
-					text-align: center;
-					width: 24px;
-				}
-				// Inbox
-				&[href="?action=unread"] {
-					&:before {
-						content: "\f01c" ;
-					}
-				}
-				// Bookmark
-				&[href="?action=bookmarks"] {
-					&:before {
-						content: "\f02e" ;
-					}
-				}
-				// History
-				&[href="?action=history"] {
-					&:before {
-						content: "\f1da" ;
-					}
-				}
-				// Subscription
-				&[href="?action=feeds"] {
-					&:before {						
-						content: "\f09e" ;
-					}
-				}
-				// Preferences
-				&[href="?action=config"] {
-					&:before {
-						content: "\f1de" ;
-					}
-				}
-				// Quit
-				&[href="?action=logout"] {
-					&:before {
-						content: "\f08b" ;
-					}
-				}
-				// Mobile menu
-				&[href="?action=more"] {
-					&:before {
-						content: "\f009";
-					}
-				}
+			a {
+				@extend %main-menu-item ;
 			}
 		}
 	}

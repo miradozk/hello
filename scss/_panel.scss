@@ -1,0 +1,28 @@
+// Panel 
+.panel {
+	margin: 5px auto;
+	padding: 10px; 
+
+	@include hn();
+
+	ul {
+		@extend %ul;
+		li {
+			@extend %li;
+			word-break: break-all;
+		}
+	}
+
+	&.panel-default {
+		background-color: $light;		
+	}
+	&.panel-danger {
+		background-color: $alizarin !important;
+
+		a {
+			&:hover {
+				color: $light
+			}
+		}
+	}
+}

@@ -83,8 +83,7 @@
 			}
 		}
 		// Actualiser le flux rss
-		&[data-action="refresh-feed"],
-		&[href^="?action=edit-feed"] {
+		&[data-action="refresh-feed"]{
 			&:before {
 				content: "\f021";
 			}

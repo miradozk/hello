@@ -1,0 +1,10 @@
+.menu-more {
+	li {
+		background-color: $concrete;
+		line-height: 36px;
+		margin-bottom: 10px;
+	}
+	a {
+		@extend %main-menu-item ;
+	}
+} 

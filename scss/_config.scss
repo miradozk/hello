@@ -1,18 +1,29 @@
+#console {
+	@include box-sizing(border-box);
+	background-color: $midnight-blue;
+	color: $clouds; 		
+	max-width: 100%;
+	overflow: hidden;
+	padding: 10px;
+	word-wrap: break-word;
+}
+
 [data-item-page="config"] {
-	.page-header {
+	.page-header,
+	.page-section {
+		margin-bottom: 10px;
+		
 		+ section {
 			background-color: $light;
 			padding: 10px;
-		}
-		+ pre {
-			max-width: 100%;
-			overflow: hidden;
-			background-color: $midnight-blue;
-			@include box-sizing(border-box);
-			padding: 10px;
-			color: $clouds; 
+
+			ul {
+				list-style-type: square;
+				margin: auto 30px ;
+			}
 		}
 	}
+
 	.page-section {
 		h2 {
 			color: $midnight-blue;
@@ -23,5 +34,15 @@
 	}
 	a {
 		color: $green-sea;
+		text-decoration: none;
+		&:hover {
+			color: $alizarin;
+			text-decoration: underline;
+		}
+	}
+	label {
+		~ br {
+			display: none;
+		}
 	}
 }

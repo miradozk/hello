@@ -15,6 +15,7 @@
 			@extend %nav-common;
 		}
 		.nav-right {
+			margin-left: 10px;
 			@extend %nav-common;
 		}
 
@@ -71,11 +72,11 @@
 
 		li {
 			@include inline-block(middle);
-			line-height: 32px;
-			font-family: $roboto-slab;
-			font-weight: 400;				
-			font-size: rem(14);
 			color: $asbestos;
+			font-family: $roboto-slab;
+			font-size: rem(14);
+			font-weight: 400;				
+			line-height: 32px;
 			
 			&:before {
 				@include inline-block(middle);

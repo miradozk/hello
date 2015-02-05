@@ -8,9 +8,18 @@
 		@extend %article-child;
 		font-family: FontAwesome;
 		font-size: rem(12);
-		margin-right: 5px;
+		background-color: $light;
+		color: $silver;
+		padding: 0 5px;
+		display: none; // deja marquer par les icones sur les menus de chaque article
+
 		&:after {
 			@extend %article-child;
+		}
+
+		+ .favicon,
+		+ a {
+			margin-left: 5px;
 		}
 	}
 
@@ -26,6 +35,9 @@
 				&:after {
 					content: "\f06e";
 				}
+			}
+			&:hover {
+				background-color: $light;
 			}
 		}
 		// Article bookmark
@@ -54,7 +66,7 @@
 		padding: 10px;
 
 		&:hover {
-			background-color: $clouds;
+			background-color: $silver;
 			border-bottom-color: $alizarin;
 		}
 
@@ -90,20 +102,6 @@
 				&:hover {
 					text-decoration: none;
 				}
-			}
-			// Nombre d'item non lus 
-			.items-count {
-				color: $concrete;
-				font-size: rem(18);
-				font-family: $helvetica;
-				font-weight: bold;
-				vertical-align: middle;
-			 	&:not(:empty):before {
-			 		content: " (";
-			 	}
-			 	&:not(:empty):after {
-			 		content: ") ";
-			 	}
 			}
 			// Date check
 			.feed-last-checked,
