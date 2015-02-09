@@ -10,6 +10,7 @@
 		li {
 			@extend %li;
 			word-break: break-all;
+			font-size: rem(16);
 		}
 	}
 
@@ -20,8 +21,11 @@
 		background-color: $alizarin !important;
 
 		a {
+			color: $light;
+			font-size: rem(16);
+
 			&:hover {
-				color: $light
+				color: $emerald;
 			}
 		}
 	}

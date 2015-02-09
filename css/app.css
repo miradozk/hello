@@ -169,10 +169,11 @@ form h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Aria
 .panel h4 { font-size: 1.25rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
 .panel h5 { font-size: 1.125rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
 .panel h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
-.panel ul li { word-break: break-all; }
+.panel ul li { word-break: break-all; font-size: 1rem; }
 .panel.panel-default { background-color: #FFFFFF; }
 .panel.panel-danger { background-color: #E74C3C !important; }
-.panel.panel-danger a:hover { color: #FFFFFF; }
+.panel.panel-danger a { color: #FFFFFF; font-size: 1rem; }
+.panel.panel-danger a:hover { color: #2ECC71; }
 
 .hide-desktop { display: none; }
 
@@ -352,7 +353,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 #login form { display: block; }
 #login form [type="text"], #login form [type="password"] { width: 100%; min-width: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.btn { -moz-appearance: none; -webkit-appearance: none; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; height: 36px; line-height: 30px; border: 0 solid transparent; padding-left: 10px; padding-right: 10px; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; font-weight: bold; cursor: pointer; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; transition: all 1s ease-in-out; text-decoration: none; /* -- 
+.btn { -moz-appearance: none; -webkit-appearance: none; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; transition: all 1s ease-in-out; border: 0 solid transparent; cursor: pointer; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; font-weight: bold; height: 36px; line-height: 30px; padding-left: 10px; padding-right: 10px; text-decoration: none; /* -- 
 &.btn-red {
 	@include flat-box($alizarin, $clouds, 5px);
 	color: $alizarin;
@@ -361,8 +362,10 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 	}
 }
 */ }
-.btn.btn-blue, .btn.btn-red { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 3px 0 #107360; -webkit-box-shadow: 0 3px 0 #107360; box-shadow: 0 3px 0 #107360; background-color: #ECF0F1; -moz-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out; -webkit-transition-delay: 0s; transition: all 0.5s ease-in-out 0s; color: #16A085; }
+.btn.btn-blue, .btn.btn-red { color: #16A085; }
 .btn.btn-blue:hover, .btn.btn-red:hover { color: #7F8C8D; }
+.btn.btn-blue { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 3px 0 #107360; -webkit-box-shadow: 0 3px 0 #107360; box-shadow: 0 3px 0 #107360; background-color: #ECF0F1; -moz-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out; -webkit-transition-delay: 0s; transition: all 0.5s ease-in-out 0s; }
+.btn.btn-red { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 3px 0 #107360; -webkit-box-shadow: 0 3px 0 #107360; box-shadow: 0 3px 0 #107360; background-color: #FFFFFF; -moz-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out; -webkit-transition-delay: 0s; transition: all 0.5s ease-in-out 0s; }
 .btn ~ a { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; color: #16A085; }
 
 #page-counter, #nav-counter { margin: 0 3px; }
