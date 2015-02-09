@@ -76,7 +76,7 @@
 				}
 			}
 		}
-		// Editr 
+		// Editer
 		&[href^="?action=edit-feed"] {
 			&:before {
 				content: "\f044";
@@ -87,6 +87,19 @@
 			&:before {
 				content: "\f021";
 			}
+		}
+		// Attachment @pcwalden
+		&.video-enclosure {
+			&:before { content: "\f1c8"; }
+		}
+		&.audio-enclosure{
+			&:before { content: "\f1c7"; }
+		}
+		&.image-enclosure{
+			&:before { content: "\f1c5"; }
+		}
+		&.enclosure{
+			&:before { content: "\f15b"; }		
 		}
 	}
 }

@@ -49,9 +49,12 @@
 				}
 			}
 		}
-		// Erreur de synchronisation
+		// Erreur de synchronisation			
 		&[data-feed-error] {
 			background-color: lighten($pomegranate, 40%);
+			.feed-parsing-error  {
+				visibility: visible;
+			}
 		}
 	}
 
@@ -125,8 +128,9 @@
 			line-height: 27px;
 		}
 
-		> .item-menu {
-
+		.feed-parsing-error {
+		    	visibility: hidden;
 		}
+		
 	}
 }
