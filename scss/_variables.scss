@@ -1,6 +1,6 @@
 // Flat UI Colors
 $turquoise:  #1ABC9C;
-$green-sea: #16A085;
+$green-sea: #16A085 !default;
 $emerald: #2ECC71;
 $nephritis: #27AE60;
 $alizarin: #E74C3C;
@@ -27,7 +27,14 @@ $sidebar-width: 200px;
 
 //Fonts 
 // $roboto-slab: 'Roboto Slab', Arial, sans-serif;
-$roboto-slab: Arial, sans-serif;
-$liberation-sans:  "Liberation Sans", FreeSans, sans-serif;
-$arial: Arial, Tahoma, sans-serif;
-$times: 'New Times Roman', Times, 'Liberation Serif', serif;
+// $roboto-slab:  'Oxygen' , sans-serif;
+$roboto-slab:  'Merriweather', serif;
+// $liberation-sans:  "Liberation Sans", FreeSans, sans-serif;
+$liberation-sans:  $roboto-slab;
+// $arial: Arial, Tahoma, sans-serif;
+$arial: $roboto-slab;
+// $times: 'New Times Roman', Times, 'Liberation Serif', serif;
+$times: $roboto-slab;
+
+$helvetica: $roboto-slab;
+$monospace: $roboto-slab;

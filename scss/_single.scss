@@ -1,3 +1,5 @@
+// $green-sea: #222;
+
 .item {
 	position: relative;
 
@@ -57,10 +59,12 @@
 	> h1 {
 		a {
 			color: $green-sea;
-			font-family: $roboto-slab;
-			font-size: rem(28);
-			font-weight: 300;
+			font-size: rem(38);
+			font-weight: bold;
+			letter-spacing: -1px;
 			text-decoration: none;
+			text-indent: -2px;
+			line-height: 1.2;
 		}
 	}
 
@@ -73,7 +77,6 @@
 		li {
 			@include inline-block(middle);
 			color: $asbestos;
-			font-family: $roboto-slab;
 			font-size: rem(14);
 			font-weight: 400;				
 			line-height: 32px;
@@ -131,8 +134,7 @@
 	> #item-content {
 		@include box-sizing(border-box);
 		background-color: $light;
-		font-family: $helvetica;
-		font-size: rem(16);
+		font-size: rem(20);
 		margin-bottom: 10px;
 		overflow: hidden;
 		padding: 10px;
@@ -161,7 +163,6 @@
 		blockquote,
 		q {
 			position: relative;
-			font-family: $roboto-slab;
 			font-weight: 300;
 			font-size: rem(18);
 			margin: 10px 20px;
@@ -193,7 +194,6 @@
 		pre {
 			background-color: $midnight-blue;
 			color: $light;
-			font-family: $monospace;
 			font-size: rem(14);
 			margin-bottom: 10px;
 			margin-top: 10px;
@@ -211,18 +211,17 @@
 			}
 		}
 
-		$size: 28;
+		$size: 38;
 		@for $i from 1 through 6   {
 			h#{$i} {
 				$size: $size - 2;
 				font-size: rem($size);
 				font-weight: normal;
-				font-family: $roboto-slab;
 			}
 		}
 
 		p {
-			line-height: 27px;
+			line-height: 40px;
 			margin-bottom: 20px;
 		}
 
