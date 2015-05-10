@@ -1,28 +1,28 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, h1, h2, h3, h4, h5, h6, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
-/* line 22, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html { line-height: 1; }
 
-/* line 24, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul { list-style: none; }
 
-/* line 26, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 28, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
-/* line 30, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote { quotes: none; }
-/* line 103, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
 
-/* line 32, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img { border: none; }
 
-/* line 116, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* line 9, ../scss/_reset.scss */
@@ -75,7 +75,7 @@ strong, h1, h2, h3, h4, h5, h6 { font-weight: 700; }
 .loading-icon:before { -moz-animation: loader 4s infinite linear; -webkit-animation: loader 4s infinite linear; animation: loader 4s infinite linear; background-color: #E74C3C; bottom: -5px; content: ''; font-family: FontAwesome; height: 2px; position: absolute; }
 
 /* line 22, ../scss/_icons.scss */
-header > nav li a, .menu-more a { color: #FFFFFF; font-family: "Roboto Slab", Arial, sans-serif; font-weight: normal; font-size: 1rem; text-decoration: none; vertical-align: middle; }
+header > nav li a, .menu-more a { color: #FFFFFF; font-family: Arial, sans-serif; font-weight: normal; font-size: 1rem; text-decoration: none; vertical-align: middle; }
 /* line 30, ../scss/_icons.scss */
 header > nav li a:before, .menu-more a:before { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; color: white; font-family: FontAwesome; font-weight: normal; margin-right: 10px; text-align: center; width: 24px; }
 /* line 41, ../scss/_icons.scss */
@@ -152,13 +152,13 @@ form { 	/* -- Sous chromium seulement
 	}
 	*/ }
 /* line 8, ../scss/_forms.scss */
-form label { font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 1rem; color: #000000; display: block; }
+form label { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 1rem; color: #000000; display: block; }
 /* line 14, ../scss/_forms.scss */
 form input, form select { -moz-appearance: none; -webkit-appearance: none; }
 /* line 17, ../scss/_forms.scss */
 form input:focus, form input:hover, form input:active, form select:focus, form select:hover, form select:active { outline: none; }
 /* line 23, ../scss/_forms.scss */
-form input[type="email"], form input[type="password"], form input[type="number"], form input[type="text"], form input[type="url"], form select { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background-color: #FFFFFF; border: 1px solid #CBD0D3; color: #000000; font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 1rem; margin-bottom: 10px; }
+form input[type="email"], form input[type="password"], form input[type="number"], form input[type="text"], form input[type="url"], form select { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background-color: #FFFFFF; border: 1px solid #CBD0D3; color: #000000; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 1rem; margin-bottom: 10px; }
 /* line 4, ../scss/bourbon/css3/_placeholder.scss */
 form input[type="email"]::-webkit-input-placeholder, form input[type="password"]::-webkit-input-placeholder, form input[type="number"]::-webkit-input-placeholder, form input[type="text"]::-webkit-input-placeholder, form input[type="url"]::-webkit-input-placeholder, form select::-webkit-input-placeholder { color: #95A5A6; }
 /* line 4, ../scss/bourbon/css3/_placeholder.scss */
@@ -178,20 +178,20 @@ form input[type="checkbox"] { -moz-appearance: checkbox; -webkit-appearance: che
 /* line 114, ../scss/_forms.scss */
 form select { line-height: 30px; min-width: 300px; padding-left: 5px; padding-right: 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; }
 /* line 24, ../scss/_mixins.scss */
-form h1 { font-size: 1.625rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+form h1 { font-size: 1.625rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-form h2 { font-size: 1.5rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+form h2 { font-size: 1.5rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-form h3 { font-size: 1.375rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+form h3 { font-size: 1.375rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-form h4 { font-size: 1.25rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+form h4 { font-size: 1.25rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-form h5 { font-size: 1.125rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+form h5 { font-size: 1.125rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-form h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+form h6 { font-size: 1rem; font-weight: normal; font-family: Arial, sans-serif; }
 
 /* line 127, ../scss/_forms.scss */
-.form-help { font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.875rem; color: #E74C3C; }
+.form-help { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; color: #E74C3C; }
 
 /* line 133, ../scss/_forms.scss */
 .form-actions { margin-bottom: 10px; margin-top: 10px; }
@@ -199,26 +199,26 @@ form h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Aria
 /* line 138, ../scss/_forms.scss */
 .form-errors { list-style-type: square; margin-left: 30px; }
 /* line 141, ../scss/_forms.scss */
-.form-errors li { font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.875rem; color: #E74C3C; }
+.form-errors li { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; color: #E74C3C; }
 
 /* line 1, ../scss/_alert.scss */
-.alert { font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.9375rem; padding: 10px; margin-bottom: 10px; }
+.alert { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.9375rem; padding: 10px; margin-bottom: 10px; }
 /* line 7, ../scss/_alert.scss */
 .alert a { color: #16A085; text-decoration: none; }
 /* line 10, ../scss/_alert.scss */
 .alert a:hover { color: #2ECC71; text-decoration: underline; }
 /* line 24, ../scss/_mixins.scss */
-.alert h1 { font-size: 1.625rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.alert h1 { font-size: 1.625rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.alert h2 { font-size: 1.5rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.alert h2 { font-size: 1.5rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.alert h3 { font-size: 1.375rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.alert h3 { font-size: 1.375rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.alert h4 { font-size: 1.25rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.alert h4 { font-size: 1.25rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.alert h5 { font-size: 1.125rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.alert h5 { font-size: 1.125rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.alert h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.alert h6 { font-size: 1rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 17, ../scss/_alert.scss */
 .alert ul { list-style-type: square; margin-left: 30px; }
 /* line 22, ../scss/_alert.scss */
@@ -233,17 +233,17 @@ form h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Aria
 /* line 2, ../scss/_panel.scss */
 .panel { margin: 5px auto; padding: 10px; }
 /* line 24, ../scss/_mixins.scss */
-.panel h1 { font-size: 1.625rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.panel h1 { font-size: 1.625rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.panel h2 { font-size: 1.5rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.panel h2 { font-size: 1.5rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.panel h3 { font-size: 1.375rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.panel h3 { font-size: 1.375rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.panel h4 { font-size: 1.25rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.panel h4 { font-size: 1.25rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.panel h5 { font-size: 1.125rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.panel h5 { font-size: 1.125rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 24, ../scss/_mixins.scss */
-.panel h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.panel h6 { font-size: 1rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 10, ../scss/_panel.scss */
 .panel ul li { word-break: break-all; }
 /* line 16, ../scss/_panel.scss */
@@ -288,7 +288,7 @@ header > nav { display: block; }
 /* line 7, ../scss/_sidebar.scss */
 header > nav > ul, header > nav > a { display: block; }
 /* line 11, ../scss/_sidebar.scss */
-header > nav .logo { color: #34495E; font-family: "Roboto Slab", Arial, sans-serif; font-weight: 700; padding: 10px; text-decoration: none; text-transform: uppercase; }
+header > nav .logo { color: #34495E; font-family: Arial, sans-serif; font-weight: 700; padding: 10px; text-decoration: none; text-transform: uppercase; }
 /* line 19, ../scss/_sidebar.scss */
 header > nav .logo span { margin-left: 2px; }
 /* line 24, ../scss/_sidebar.scss */
@@ -313,7 +313,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 25, ../scss/_toolbar.scss */
 .page-header > ul ul, .page-header > nav ul { position: relative; }
 /* line 29, ../scss/_toolbar.scss */
-.page-header h2 { color: #2C3E50; font-family: "Roboto Slab", Arial, sans-serif; font-size: 1rem; text-transform: uppercase; }
+.page-header h2 { color: #2C3E50; font-family: Arial, sans-serif; font-size: 1rem; text-transform: uppercase; }
 /* line 38, ../scss/_toolbar.scss */
 .page-header ul li { text-align: center; margin-left: 10px; }
 /* line 57, ../scss/_toolbar.scss */
@@ -359,7 +359,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 
 /* line 1, ../scss/_items.scss */
 .items { *zoom: 1; }
-/* line 38, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 .items:after { content: ""; display: table; clear: both; }
 /* line 4, ../scss/_items.scss */
 .items article[data-feed-disabled="1"] .read-icon, .items article[data-item-status="read"] .read-icon, .items article[data-item-bookmark="1"] .bookmark-icon, .items article[data-feed-disabled="1"] .read-icon:after, .items article[data-item-status="read"] .read-icon:after, .items article[data-item-bookmark="1"] .bookmark-icon:after { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; }
@@ -388,22 +388,22 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 87, ../scss/_items.scss */
 .items article > h2 .favicon { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; border: none; height: 16px; width: 16px; }
 /* line 94, ../scss/_items.scss */
-.items article > h2 a { vertical-align: middle; color: #16A085; font-family: "Roboto Slab", Arial, sans-serif; font-weight: normal; font-size: 1.125rem; text-decoration: none; }
+.items article > h2 a { vertical-align: middle; color: #16A085; font-family: Arial, sans-serif; font-weight: normal; font-size: 1.125rem; text-decoration: none; }
 /* line 102, ../scss/_items.scss */
 .items article > h2 a:hover { text-decoration: none; }
 /* line 107, ../scss/_items.scss */
-.items article > h2 .feed-last-checked, .items article > h2 .feed-parsing-error { font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.875rem; font-weight: normal; }
+.items article > h2 .feed-last-checked, .items article > h2 .feed-parsing-error { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; font-weight: normal; }
 /* line 113, ../scss/_items.scss */
 .items article > h2 .feed-last-checked { color: #F39C12; }
 /* line 117, ../scss/_items.scss */
 .items article > h2 .feed-parsing-error { color: #C0392B; }
 /* line 122, ../scss/_items.scss */
-.items article > .preview { font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 1rem; line-height: 27px; }
+.items article > .preview { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 1rem; line-height: 27px; }
 
 /* line 2, ../scss/_item-menu.scss */
 .item-menu li, .item-menu li:before, .item-menu a:before { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; }
 /* line 6, ../scss/_item-menu.scss */
-.item-menu li { color: #7F8C8D; font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.875rem; }
+.item-menu li { color: #7F8C8D; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; }
 /* line 13, ../scss/_item-menu.scss */
 .item-menu li:first-child:before { display: none; }
 /* line 17, ../scss/_item-menu.scss */
@@ -459,7 +459,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 .item { position: relative; }
 /* line 4, ../scss/_single.scss */
 .item > nav { *zoom: 1; text-align: right; }
-/* line 38, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 .item > nav:after { content: ""; display: table; clear: both; }
 /* line 9, ../scss/_single.scss */
 .item > nav .nav-left, .item > nav .nav-right { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; overflow: hidden; color: transparent; }
@@ -476,11 +476,11 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 51, ../scss/_single.scss */
 .item > nav #previous-item:before { content: "\f104"; }
 /* line 58, ../scss/_single.scss */
-.item > h1 a { color: #16A085; font-family: "Roboto Slab", Arial, sans-serif; font-size: 1.75rem; font-weight: 300; text-decoration: none; }
+.item > h1 a { color: #16A085; font-family: Arial, sans-serif; font-size: 1.75rem; font-weight: 300; text-decoration: none; }
 /* line 67, ../scss/_single.scss */
 .item > .item-infos { display: block; margin-top: 10px; margin-bottom: 10px; background-color: #CBD0D3; }
 /* line 73, ../scss/_single.scss */
-.item > .item-infos li { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; color: #7F8C8D; font-family: "Roboto Slab", Arial, sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 32px; }
+.item > .item-infos li { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; color: #7F8C8D; font-family: Arial, sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 32px; }
 /* line 81, ../scss/_single.scss */
 .item > .item-infos li:before { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; content: " - "; }
 /* line 87, ../scss/_single.scss */
@@ -500,7 +500,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 125, ../scss/_single.scss */
 .item > .item-infos li [data-failure-message] { color: #E74C3C; }
 /* line 131, ../scss/_single.scss */
-.item > #item-content { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #FFFFFF; font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 1rem; margin-bottom: 10px; overflow: hidden; padding: 10px; }
+.item > #item-content { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #FFFFFF; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 1rem; margin-bottom: 10px; overflow: hidden; padding: 10px; }
 /* line 141, ../scss/_single.scss */
 .item > #item-content a { color: #16A085; text-decoration: none; }
 /* line 144, ../scss/_single.scss */
@@ -512,7 +512,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 157, ../scss/_single.scss */
 .item > #item-content ol { list-style-type: decimal; }
 /* line 161, ../scss/_single.scss */
-.item > #item-content blockquote, .item > #item-content q { position: relative; font-family: "Roboto Slab", Arial, sans-serif; font-weight: 300; font-size: 1.125rem; margin: 10px 20px; }
+.item > #item-content blockquote, .item > #item-content q { position: relative; font-family: Arial, sans-serif; font-weight: 300; font-size: 1.125rem; margin: 10px 20px; }
 /* line 169, ../scss/_single.scss */
 .item > #item-content blockquote small, .item > #item-content q small { font-size: 0.875rem; }
 /* line 173, ../scss/_single.scss */
@@ -524,21 +524,21 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 188, ../scss/_single.scss */
 .item > #item-content blockquote > *:first-child, .item > #item-content blockquote > *:last-child, .item > #item-content q > *:first-child, .item > #item-content q > *:last-child { display: inline; }
 /* line 193, ../scss/_single.scss */
-.item > #item-content pre { background-color: #2C3E50; color: #FFFFFF; font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace; font-size: 0.875rem; margin-bottom: 10px; margin-top: 10px; padding: 10px; position: relative; }
+.item > #item-content pre { background-color: #2C3E50; color: #FFFFFF; font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace; font-size: 0.875rem; margin-bottom: 10px; margin-top: 10px; padding: 10px; position: relative; }
 /* line 202, ../scss/_single.scss */
 .item > #item-content pre:before { display: block; content: ""; background-color: #34495E; bottom: 0; left: 0; position: absolute; top: 0; width: 2px; }
 /* line 216, ../scss/_single.scss */
-.item > #item-content h1 { font-size: 1.625rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.item > #item-content h1 { font-size: 1.625rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 216, ../scss/_single.scss */
-.item > #item-content h2 { font-size: 1.5rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.item > #item-content h2 { font-size: 1.5rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 216, ../scss/_single.scss */
-.item > #item-content h3 { font-size: 1.375rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.item > #item-content h3 { font-size: 1.375rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 216, ../scss/_single.scss */
-.item > #item-content h4 { font-size: 1.25rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.item > #item-content h4 { font-size: 1.25rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 216, ../scss/_single.scss */
-.item > #item-content h5 { font-size: 1.125rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.item > #item-content h5 { font-size: 1.125rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 216, ../scss/_single.scss */
-.item > #item-content h6 { font-size: 1rem; font-weight: normal; font-family: "Roboto Slab", Arial, sans-serif; }
+.item > #item-content h6 { font-size: 1rem; font-weight: normal; font-family: Arial, sans-serif; }
 /* line 224, ../scss/_single.scss */
 .item > #item-content p { line-height: 27px; margin-bottom: 20px; }
 /* line 229, ../scss/_single.scss */
@@ -554,7 +554,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 20, ../scss/_config.scss */
 [data-item-page="config"] .page-header + section ul, [data-item-page="config"] .page-section + section ul { list-style-type: square; margin: auto 30px; }
 /* line 28, ../scss/_config.scss */
-[data-item-page="config"] .page-section h2 { color: #2C3E50; font-family: "Roboto Slab", Arial, sans-serif; font-size: 1rem; text-transform: uppercase; }
+[data-item-page="config"] .page-section h2 { color: #2C3E50; font-family: Arial, sans-serif; font-size: 1rem; text-transform: uppercase; }
 /* line 35, ../scss/_config.scss */
 [data-item-page="config"] a { color: #16A085; text-decoration: none; }
 /* line 38, ../scss/_config.scss */
@@ -570,7 +570,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 #login form [type="text"], #login form [type="password"] { width: 100%; min-width: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* line 1, ../scss/_buttons.scss */
-.btn { -moz-appearance: none; -webkit-appearance: none; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; height: 36px; line-height: 30px; border: 0 solid transparent; padding-left: 10px; padding-right: 10px; font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.875rem; font-weight: bold; cursor: pointer; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; transition: all 1s ease-in-out; text-decoration: none; /* -- 
+.btn { -moz-appearance: none; -webkit-appearance: none; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; height: 36px; line-height: 30px; border: 0 solid transparent; padding-left: 10px; padding-right: 10px; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; font-weight: bold; cursor: pointer; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; transition: all 1s ease-in-out; text-decoration: none; /* -- 
 &.btn-red {
 	@include flat-box($alizarin, $clouds, 5px);
 	color: $alizarin;
@@ -584,7 +584,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 /* line 20, ../scss/_buttons.scss */
 .btn.btn-blue:hover, .btn.btn-red:hover { color: #7F8C8D; }
 /* line 33, ../scss/_buttons.scss */
-.btn ~ a { font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.875rem; color: #16A085; }
+.btn ~ a { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; color: #16A085; }
 
 /* line 1, ../scss/_counter.scss */
 #page-counter, #nav-counter { margin: 0 3px; }
@@ -594,7 +594,7 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
 #page-counter:not(:empty):after, #nav-counter:not(:empty):after { content: ") "; }
 
 /* line 14, ../scss/_counter.scss */
-.items-count { background-color: #16A085; color: #FFFFFF; font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 0.875rem; font-weight: normal; padding: 5px; vertical-align: middle; }
+.items-count { background-color: #16A085; color: #FFFFFF; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 0.875rem; font-weight: normal; padding: 5px; vertical-align: middle; }
 
 @media only screen and (min-width: 320px) { /* line 4, ../scss/_queries.scss */
   #login { margin: 10px 5px; } }
@@ -610,14 +610,14 @@ header > nav li:before { bottom: 0; content: ""; display: block; left: 0; positi
   header { margin-bottom: 10px; }
   /* line 42, ../scss/_queries.scss */
   header > nav { *zoom: 1; }
-  /* line 38, ../../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.1/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
   header > nav:after { content: ""; display: table; clear: both; }
   /* line 44, ../scss/_queries.scss */
   header > nav li { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: block; float: left; width: 50%; }
   /* line 49, ../scss/_queries.scss */
   header > nav li:before { height: 3px; right: 0; top: initial; width: 100%; }
   /* line 59, ../scss/_queries.scss */
-  .page { margin-left: 10px; margin-right: 10px; padding: 0; width: auto; }
+  .page:not(#login) { margin-left: 10px; margin-right: 10px; padding: 0; width: auto; }
   /* line 67, ../scss/_queries.scss */
   .page-header > h2 { margin-bottom: 10px; }
   /* line 70, ../scss/_queries.scss */
