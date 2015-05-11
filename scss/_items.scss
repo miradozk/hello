@@ -27,7 +27,7 @@
 		// Article lus / desactiver
 		&[data-feed-disabled="1"],
 		&[data-item-status="read"] {
-			background-color: $silver;
+			background-color: $clouds;
 
 			// Icones bookmark et as read
 			.read-icon {
@@ -53,20 +53,20 @@
 		&[data-feed-error] {
 			background-color: lighten($pomegranate, 40%);
 		}
-	}
 
-	// Article non-lus
-	article {
+		// Article non-lus
 		@include box-sizing(border-box);
 		@include transition(all 1.0s ease-in-out);
-		background-color: $light;
-		border-bottom: 2px solid $green-sea;
+		// background-color: lighten($clouds, 1%);
+		// border-bottom: 2px solid $green-sea;
+		border-bottom: 1px solid $clouds;
 		cursor: pointer;
 		margin-bottom: 10px;
 		padding: 10px;
 
 		&:hover {
-			background-color: $silver;
+			// background-color: $silver;
+			background-color: lighten($clouds, 1%);
 			border-bottom-color: $alizarin;
 		}
 
@@ -96,8 +96,8 @@
 				vertical-align: middle;
 				color: $green-sea;
 				font-family: $roboto-slab;
-				font-weight: normal;
-				font-size: rem(18);
+				font-weight: bold;
+				font-size: rem(16);
 				text-decoration: none;
 				&:hover {
 					text-decoration: none;
@@ -120,13 +120,14 @@
 		}
 
 		> .preview {
-			font-family: $helvetica;
-			font-size: rem(16);
+			// font-family: $rob;
+			font-size: rem(15);
 			line-height: 27px;
 		}
 
 		> .item-menu {
 
 		}
+	
 	}
 }

@@ -12,10 +12,10 @@
 	@include box-shadow(0 3px 0 darken($theme-background-highlight, 10%));
 }
 @mixin flat-box($shadowColor, $buttonColor, $radius) {
-	@include border-radius($radius);
+	@include border-radius(2px);
 	@include box-shadow(0 3px 0 darken($shadowColor, 10%));
-	background-color: $buttonColor;
 	@include transition(all .5s ease-in-out 0s);
+	background-color: $light; 
 }
 
 @mixin hn(){

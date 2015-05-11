@@ -1,23 +1,32 @@
 body {
-	background-color: $clouds;
+	// background-color: $clouds;
+	background-color: $light;
+	position: relative;
+	@include pie-clearfix;
 
 	> header,
 	> section {
-		bottom: 0;		
-		top: 0;
+		// bottom: 0;		
+		// top: 0;
+		// position: fixed;
 	}
 
 	> section {
 		overflow: auto;
-		position: absolute;
+		margin: 0 auto;
 	}
 
 
 	> header {
-		left: 0;
-		overflow: hidden;
-		position: fixed;
-		width: px2cent(220px);
+		@media only screen and (min-width: 960px) { 
+			left: 20px;
+			top: 20px;
+			overflow: hidden;
+			width: px2cent(220px);
+			position: fixed;
+			z-index: 999;
+
+		}
 	}
 }
 
@@ -27,28 +36,5 @@ body {
 	width: px2cent( (1366px - 270px));
 }
 
-/*
-.page-section {
- 	h2 {
- 		@extend %title;
- 		margin: {
- 			bottom: 15px;
- 			top: 15px;
- 		}
- 	}
 
- 	+ section {
- 		background-color: $theme-background-light;
- 		padding: 10px;
-		
-		ul {
-			@extend %ul;
-
-			li {
-				@extend %li;
-			}
-		}	 		
- 	}
-}
-*/
 

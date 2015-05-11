@@ -1,6 +1,11 @@
 .page-header {
-	position: relative;
-	margin-bottom: 10px;
+	@media only screen and (max-width: 959px) {
+		display: none;
+	}
+	@media only screen and (min-width: 960px)  {
+		position: relative;
+		margin-bottom: 10px;
+	}
 	
 	%toolbar-child {
 		@include inline-block(middle);
@@ -22,9 +27,9 @@
 		right: 0;
 		top: 0;
 		
-		ul {
-			position: relative;
-		}
+		// ul {
+		// 	position: relative;
+		// }
 	}
 	 h2 {
 		color: $midnight-blue;
@@ -34,9 +39,15 @@
 	}
 
 	ul {
-		@extend %toolbar-container;
+		// @extend %toolbar-container;
+		position: fixed;
+		left: 10px;
+		top: 60px;
+		z-index: 111;
+
 		li {
-			@extend %toolbar-child;
+			// @extend %toolbar-child;
+			display: block;
 			text-align: center;
 			margin-left: 10px;
 

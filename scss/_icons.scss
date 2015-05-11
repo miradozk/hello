@@ -20,7 +20,7 @@
 }
 // Item menu
 %main-menu-item {
-		color: $light;
+		color: $green-sea;
 		font-family: $roboto-slab;
 		font-weight: normal;
 		font-size: rem(16);
@@ -29,7 +29,7 @@
 
 		&:before {
 			@include inline-block(middle);
-			color: white;
+			color: $green-sea;
 			font-family: FontAwesome;
 			font-weight: normal;
 			margin-right: 10px;
