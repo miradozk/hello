@@ -28,7 +28,7 @@ form {
 		font-family: $helvetica;
 		font-size: rem(16);
 		margin-bottom: 10px;
-		@include placeholder {
+	 	@include input-placeholder {
 			color: $concrete;
 		}
 		&:focus,
