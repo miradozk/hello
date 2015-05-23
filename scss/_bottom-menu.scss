@@ -25,6 +25,7 @@
 		}
 
 		// Mark as read 
+		&[href="?action=mark-all-read"],
 		&[data-action="mark-all-read"] {
 			&:before { 
 				content: "\f06e";

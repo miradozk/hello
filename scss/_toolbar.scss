@@ -78,7 +78,7 @@
 		&:after {
 			@include flat-box($green-sea, $light, 5px);
 			display: block;
-			font-family: FontAwesome;
+			font-family: "FontAwesome";
 			left: 0;
 			line-height: 30px;
 			padding: 0;
@@ -202,5 +202,10 @@
 				content: "\f12d";
 			}
 		}	
+		&[href="?action=mark-all-read"]  {
+			&:after { 
+				content: "\f06e";
+			}
+		}
 	}
 }
