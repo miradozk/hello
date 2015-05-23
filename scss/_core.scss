@@ -203,6 +203,7 @@ section {
 						}
 					}
 					&[href*="mark-as-read"],
+					&[href="?action=mark-all-read"],
 					&[href*="mark-feed-as-read"] {
 						&:after {
 							content: "\f058";
