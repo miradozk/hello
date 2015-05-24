@@ -1,0 +1,41 @@
+// Listes des articles non lus
+[data-item-page="feeds"] {
+	article {
+		&[data-feed-disabled="1"] {
+			background-color: $clouds;
+
+			.read-icon {
+				@extend %article-indicator-icon ;
+				&:after {
+					content: "\f06e";
+				}
+			}
+			&:hover {
+				background-color: $light;
+			}
+		}
+		// Erreur de synchronisation
+		&[data-feed-error] {
+			background-color: lighten($pomegranate, 40%);
+
+			.feed-parsing-error {
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.feed-parsing-error {
+	visibility: hidden;
+	color: $pomegranate;
+}
+.feed-last-checked {
+	color: $orange;
+}
+
+.feed-last-checked,
+.feed-parsing-error {
+	font-family: $helvetica;
+	font-size: rem(14);
+	font-weight: normal;
+}

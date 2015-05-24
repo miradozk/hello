@@ -4,6 +4,7 @@
 	%article-child {
 		@include inline-block(middle);
 	}
+	
 	%article-indicator-icon {
 		@extend %article-child;
 		font-family: FontAwesome;
@@ -24,6 +25,19 @@
 	}
 
 	article {
+		// Article non-lus
+		@include box-sizing(border-box);
+		@include transition(all 1.0s ease-in-out);
+		border-bottom: 1px solid $clouds;
+		cursor: pointer;
+		margin-bottom: 10px;
+		padding: 10px;
+
+		&:hover {
+			background-color: lighten($clouds, 1%);
+			border-bottom-color: $alizarin;
+		}
+		
 		// Article lus / desactiver
 		&[data-feed-disabled="1"],
 		&[data-item-status="read"] {
@@ -40,6 +54,7 @@
 				background-color: $light;
 			}
 		}
+
 		// Article bookmark
 		&[data-item-bookmark="1"] {
 			.bookmark-icon  {
@@ -49,85 +64,45 @@
 				}
 			}
 		}
-		// Erreur de synchronisation
-		&[data-feed-error] {
-			background-color: lighten($pomegranate, 40%);
-		}
-
-		// Article non-lus
-		@include box-sizing(border-box);
-		@include transition(all 1.0s ease-in-out);
-		// background-color: lighten($clouds, 1%);
-		// border-bottom: 2px solid $green-sea;
-		border-bottom: 1px solid $clouds;
-		cursor: pointer;
-		margin-bottom: 10px;
-		padding: 10px;
-
-		&:hover {
-			// background-color: $silver;
-			background-color: lighten($clouds, 1%);
-			border-bottom-color: $alizarin;
-		}
-
-		> h2 {
-			padding: 0;
-			margin-left: 0;
-			margin-right: 0;
-			margin-top: 0;
-			margin-bottom: 5px;
-
-			// Icones bookmark et as read
-			.bookmark-icon,
-			.read-icon {
-				display: none;
-			}
-
-			// Favicon
-			.favicon {
-				@include inline-block(middle);
-				border: none;
-				height: 16px;
-				width: 16px;
-			}
-			// Titre
-			a {
-				// @include inline-block(middle);
-				vertical-align: middle;
-				color: $green-sea;
-				font-family: $roboto-slab;
-				font-weight: bold;
-				font-size: rem(16);
-				text-decoration: none;
-				&:hover {
-					text-decoration: none;
-				}
-			}
-			// Date check
-			.feed-last-checked,
-			.feed-parsing-error {
-				font-family: $helvetica;
-				font-size: rem(14);
-				font-weight: normal;
-			}
-			.feed-last-checked {
-				color: $orange;
-			}
-			// Erreur sur dernier check
-			.feed-parsing-error {
-				color: $pomegranate;
-			}
-		}
-
-		> .preview {
-			// font-family: $rob;
-			font-size: rem(15);
-			line-height: 27px;
-		}
-
-		> .item-menu {
-
-		}
+	}
 	
+	 h2 {
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 5px;
+
+		// Icones bookmark et as read
+		.bookmark-icon,
+		.read-icon {
+			display: none;
+		}
+
+		// Favicon
+		.favicon {
+			@include inline-block(middle);
+			border: none;
+			height: 16px;
+			width: 16px;
+		}
+		// Titre
+		a {
+			// @include inline-block(middle);
+			vertical-align: middle;
+			color: $green-sea;
+			font-family: $roboto-slab;
+			font-weight: bold;
+			font-size: rem(16);
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.preview {
+		font-size: rem(15);
+		line-height: 27px;
 	}
 }
