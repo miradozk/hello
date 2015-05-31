@@ -594,6 +594,11 @@ body > section {
   overflow: auto;
   margin: 0 auto;
 }
+@media only screen and (max-width: 959px) {
+  body > header {
+    background-color: #191919;
+  }
+}
 @media only screen and (min-width: 960px) {
   body > header {
     left: 20px;
@@ -613,9 +618,11 @@ body > section {
 
 header > nav {
   display: block;
-  max-width: 35px;
 }
 @media only screen and (min-width: 960px) {
+  header > nav {
+    max-width: 35px;
+  }
   header > nav:hover > ul {
     display: block;
   }
@@ -674,11 +681,24 @@ header > nav li {
   display: block;
   padding: 5px 10px;
 }
-header > nav li:hover, header > nav li.active {
-  background-color: #cfd9db;
+@media only screen and (max-width: 959px) {
+  header > nav li {
+    background-color: #FFFFFF;
+  }
+  header > nav li:hover, header > nav li.active {
+    background-color: #FFFFFF;
+  }
+  header > nav li:hover:before, header > nav li.active:before {
+    background-color: #191919;
+  }
 }
-header > nav li:hover:before, header > nav li.active:before {
-  background-color: #E74C3C;
+@media only screen and (min-width: 960px) {
+  header > nav li:hover, header > nav li.active {
+    background-color: #cfd9db;
+  }
+  header > nav li:hover:before, header > nav li.active:before {
+    background-color: #E74C3C;
+  }
 }
 header > nav li:before {
   bottom: 0;

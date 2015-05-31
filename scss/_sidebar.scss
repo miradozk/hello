@@ -1,9 +1,12 @@
 header {
 	> nav {
 		display: block;
-		max-width: 35px;
-		
+
+		@media only screen and (max-width: 959px) {
+
+		}
 		@media only screen and (min-width: 960px) { 
+			max-width: 35px;
 			&:hover {
 				> ul {
 					display: block;
@@ -59,13 +62,25 @@ header {
 			position: relative;
 			display: block;
 			padding: 5px 10px;
+			@media only screen and (max-width: 959px) {
+				background-color: $light;
+				&:hover,
+				&.active {
+					background-color: $light;
 
-			&:hover,
-			&.active {
-				background-color: darken($clouds, 10%);
+					&:before {
+						background-color: $green-sea;
+					}
+				}
+			}
+			@media only screen and (min-width: 960px) { 
+				&:hover,
+				&.active {
+					background-color: darken($clouds, 10%);
 
-				&:before {
-					background-color: $alizarin;
+					&:before {
+						background-color: $alizarin;
+					}
 				}
 			}
 			&:before {

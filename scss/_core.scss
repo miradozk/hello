@@ -18,6 +18,9 @@ body {
 
 
 	> header {
+		@media only screen and (max-width: 959px) {
+			background-color: $green-sea;
+		}
 		@media only screen and (min-width: 960px) { 
 			left: 20px;
 			top: 20px;
