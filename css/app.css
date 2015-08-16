@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 { margin-top: 10px; }
 strong, h1, h2, h3, h4, h5, h6 { font-weight: 700; }
 
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.1.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
-.loading-icon:before, header nav li > a:before, .page-header ul li a:after, .items .item-menu li a:before, .items #bottom-menu > a, .item .item-infos li a.bookmark-icon { font-family: "FontAwesome"; }
+.loading-icon:before, header nav li > a:before, .page-header > ul li a:after, .items .item-menu li a:before, .items #bottom-menu > a, .item .item-infos li a.bookmark-icon { font-family: "FontAwesome"; }
 
 .loading-icon:before { content: "\f021"; color: #009966; -webkit-animation: spin 2s infinite linear; animation: spin 2s infinite linear; margin-right: 10px; }
 
@@ -84,30 +84,36 @@ section.page a { color: #009966; }
 
 .page-header { margin: 0  0 15px; *zoom: 1; }
 .page-header:after { content: ""; display: table; clear: both; }
-.page-header h2 { float: left; line-height: 30px; }
-.page-header ul { float: right; }
-.page-header ul li { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; text-align: center; }
-.page-header ul li a, .page-header ul li a:after { overflow: hidden; display: block; height: 25px; text-decoration: none; width: 25px; }
-.page-header ul li a { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 3px 0 #009966; -webkit-box-shadow: 0 3px 0 #009966; box-shadow: 0 3px 0 #009966; background-color: #f2f2f2; color: #008055; font-family: "Liberation Sans", serif; position: relative; text-indent: -999px; }
-.page-header ul li a:after { left: 0; line-height: 25px; position: absolute; text-indent: 0; top: 0; z-index: 999; }
-.page-header ul li a[href*="action=unread"][href*="direction=asc"]:after, .page-header ul li a[href*="action=feed-items"][href*="direction=asc"]:after { content: "\f162"; }
-.page-header ul li a[href*="action=unread"][href*="direction=desc"]:after, .page-header ul li a[href*="action=feed-items"][href*="direction=desc"]:after { content: "\f163"; }
-.page-header ul li a[href*="mark-as-read"]:after, .page-header ul li a[href="?action=mark-all-read"]:after, .page-header ul li a[href*="mark-feed-as-read"]:after { content: "\f058"; }
-.page-header ul li a[href="?action=add"]:after { content: "\f067"; }
-.page-header ul li a[href="?action=import"]:after { content: "\f093"; }
-.page-header ul li a[href="?action=export"]:after { content: "\f019"; }
-.page-header ul li a[href="?action=refresh-all"]:after { content: "\f021"; }
-.page-header ul li a[href="?action=confirm-flush-history"]:after { content: "\f014"; }
-.page-header ul li a[href="?action=feeds"]:after { content: "\f09e"; }
-.page-header ul li a[href="?action=config"]:after { content: "\f013"; }
-.page-header ul li a[href="?action=help"]:after { content: "\f128"; }
-.page-header ul li a[href="?action=services"]:after { content: "\f1e0"; }
-.page-header ul li a[href="?action=about"]:after { content: "\f129"; }
-.page-header ul li a[href="?action=database"]:after { content: "\f1c0"; }
-.page-header ul li a[href="?action=api"]:after { content: "\f084"; }
-.page-header ul li a[href*="action=refresh-feed"]:after { content: "\f021"; }
-.page-header ul li a[href*="action=console"]:after { content: "\f120"; }
-.page-header ul li a[href*="action=flush-console"]:after { content: "\f12d"; }
+.page-header h2 { line-height: 30px; }
+.page-header > nav { display: block; }
+.page-header > nav li { display: inline-block; }
+.page-header > nav li.active a { font-weight: bold; text-decoration: underline; }
+.page-header > nav a { text-decoration: none; }
+.page-header > nav a:hover { text-decoration: underline; }
+.page-header > ul { position: absolute; right: 0; top: 0; }
+.page-header > ul li { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; text-align: center; }
+.page-header > ul li a, .page-header > ul li a:after { overflow: hidden; display: block; height: 25px; text-decoration: none; width: 25px; }
+.page-header > ul li a { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 3px 0 #009966; -webkit-box-shadow: 0 3px 0 #009966; box-shadow: 0 3px 0 #009966; background-color: #f2f2f2; color: #008055; font-family: "Liberation Sans", serif; position: relative; text-indent: -999px; }
+.page-header > ul li a:after { left: 0; line-height: 25px; position: absolute; text-indent: 0; top: 0; z-index: 999; }
+.page-header > ul li a[href*="action=unread"][href*="direction=asc"]:after, .page-header > ul li a[href*="action=feed-items"][href*="direction=asc"]:after { content: "\f162"; }
+.page-header > ul li a[href*="action=unread"][href*="direction=desc"]:after, .page-header > ul li a[href*="action=feed-items"][href*="direction=desc"]:after { content: "\f163"; }
+.page-header > ul li a[href*="mark-as-read"]:after, .page-header > ul li a[href*="mark-all-read"]:after, .page-header > ul li a[href="?action=mark-all-read"]:after, .page-header > ul li a[href*="mark-feed-as-read"]:after { content: "\f058"; }
+.page-header > ul li a[href="?action=add"]:after { content: "\f067"; }
+.page-header > ul li a[href="?action=import"]:after { content: "\f093"; }
+.page-header > ul li a[href="?action=export"]:after { content: "\f019"; }
+.page-header > ul li a[href="?action=refresh-all"]:after { content: "\f021"; }
+.page-header > ul li a[href="?action=confirm-flush-history"]:after { content: "\f014"; }
+.page-header > ul li a[href="?action=feeds"]:after { content: "\f09e"; }
+.page-header > ul li a[href="?action=config"]:after { content: "\f013"; }
+.page-header > ul li a[href="?action=help"]:after { content: "\f128"; }
+.page-header > ul li a[href="?action=services"]:after { content: "\f1e0"; }
+.page-header > ul li a[href="?action=about"]:after { content: "\f129"; }
+.page-header > ul li a[href="?action=database"]:after { content: "\f1c0"; }
+.page-header > ul li a[href="?action=api"]:after { content: "\f084"; }
+.page-header > ul li a[href*="action=refresh-feed"]:after { content: "\f021"; }
+.page-header > ul li a[href*="action=console"]:after { content: "\f120"; }
+.page-header > ul li a[href*="action=flush-console"]:after { content: "\f12d"; }
+
 .page-section h2 { margin-bottom: 15px; margin-top: 15px; }
 .page-section + section { background-color: #fFFFFF; padding: 10px; }
 
@@ -146,6 +152,10 @@ section.page a { color: #009966; }
 .items .item-menu li a { color: #008055; text-decoration: none; }
 .items .item-menu li a:before { margin-right: 2px; }
 .items .item-menu li a.original:before { content: "\f0ac"; }
+.items .item-menu li a.enclosure:before { content: "\f1c6"; }
+.items .item-menu li a.image-enclosure:before { content: "\f1c5"; }
+.items .item-menu li a.audio-enclosure:before { content: "\f1c7"; }
+.items .item-menu li a.video-enclosure:before { content: "\f1c8"; }
 .items .item-menu li a[href*="action=confirm-remove-feed"]:before { content: "\f014"; }
 .items .item-menu li a[href*="action=edit-feed"]:before { content: "\f044"; }
 .items .item-menu li a[href*="action=refresh-feed"]:before { content: "\f021"; }

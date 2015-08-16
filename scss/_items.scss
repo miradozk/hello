@@ -114,6 +114,26 @@
 						content: "\f0ac";
 					}
 				}
+				&.enclosure {
+					&:before {
+						content: "\f1c6";
+					}
+				}
+				&.image-enclosure{
+					&:before {
+						content: "\f1c5";
+					}
+				}
+				&.audio-enclosure {
+					&:before {
+						content: "\f1c7";
+					}
+				}
+				&.video-enclosure {
+					&:before {
+						content: "\f1c8";
+					}
+				}
 				&[href*="action=confirm-remove-feed"] {
 					&:before {
 						content: "\f014";

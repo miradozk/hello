@@ -139,182 +139,205 @@ section {
 		}
 	}
 }
-.page {
-	// Toolbar
-	&-header {
-		margin: 0  0 15px;
-		@include pie-clearfix;
 
-		 h2 {
-			float: left;
-			line-height: 30px;
-			@extend %title;
-		}
-		 ul {
-			float: right;
+.page-header {
+	margin: 0  0 15px;
+	@include pie-clearfix;
 
-			 li {
-				@include inline-block;
-				text-align: center;
-				
-				a ,
-				a:after {
-					overflow: hidden;
-					display: block;
-					height: 25px;
-					text-decoration: none;
-					width: 25px;	
-				}
-				
+	 h2 {
+		//float: left;
+		line-height: 30px;
+		@extend %title;
+	}
+	> nav {
+		display: block;
+
+		li {
+			display: inline-block;
+
+			&.active {
 				a {
-					@include border-radius(5px);
-					@include box-shadow(0 3px 0 $theme-background-highlight);
-					background-color: $button-background-grey;
-					color: darken($theme-background-highlight, 5%);
-					font-family: $ui-font-highlight;
-					position: relative;
-					text-indent: -999px;
-					
-
-					&:after {
-						@extend %awesome;
-						left: 0;
-						line-height: 25px;
-						position: absolute;
-						text-indent: 0;
-						top: 0;
-						z-index: 999;
-					}
-					
-					&[href*="action=unread"],
-					&[href*="action=feed-items"] {
-						&[href*="direction=asc"] {
-							&:after {
-								content: "\f162";
-							}
-						}					
-					}
-					&[href*="action=unread"],
-					&[href*="action=feed-items"] {
-						&[href*="direction=desc"] {
-							&:after {
-								content: "\f163";
-							}
-						}
-					}
-					&[href*="mark-as-read"],
-					&[href="?action=mark-all-read"],
-					&[href*="mark-feed-as-read"] {
-						&:after {
-							content: "\f058";
-						}
-					}
-					&[href="?action=add"] {
-						&:after {
-							content: "\f067";
-						}
-					}
-					&[href="?action=import"] {
-						&:after {
-							content: "\f093";
-						}
-					}
-					&[href="?action=export"] {
-						&:after {
-							content: "\f019";
-						}
-					}					
-					&[href="?action=refresh-all"] {
-						&:after {
-							content: "\f021";
-						}
-					}
-					&[href="?action=confirm-flush-history"] {
-						&:after {
-							content: "\f014";
-						}
-					}
-					&[href="?action=feeds"] {
-						&:after {
-							content: "\f09e";
-						}
-					}
-					&[href="?action=config"] {
-						&:after {
-							content: "\f013";
-						}
-					}
-
-					&[href="?action=help"] {
-						&:after {
-							content: "\f128";
-						}
-					}
-					
-					&[href="?action=services"] {
-						&:after {
-							content: "\f1e0";
-						}
-					}
-					&[href="?action=about"] {
-						&:after {
-							content: "\f129";
-						}
-					}
-					&[href="?action=database"] {
-						&:after {
-							content: "\f1c0";
-						}
-					}
-					&[href="?action=api"] {
-						&:after {
-							content: "\f084";
-						}
-					}
-					&[href*="action=refresh-feed"] {
-						&:after {
-							content: "\f021";
-						}
-					}
-					&[href*="action=console"] {
-						&:after {
-							content: "\f120";
-						}
-					}
-					&[href*="action=flush-console"] {
-						&:after {
-							content: "\f12d";
-						}
-					}	
+					font-weight: bold;
+					text-decoration: underline;
 				}
+			}
+		}
 
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}
+	> ul {
+		position: absolute;
+		right: 0;
+		top: 0;
 
-	 &-section {
-	 	h2 {
-	 		@extend %title;
-	 		margin: {
-	 			bottom: 15px;
-	 			top: 15px;
-	 		}
-	 	}
+		//float: right;
 
-	 	+ section {
-	 		background-color: $theme-background-light;
-	 		padding: 10px;
+		 li {
+			@include inline-block;
+			text-align: center;
 			
-			ul {
-				@extend %ul;
+			a ,
+			a:after {
+				overflow: hidden;
+				display: block;
+				height: 25px;
+				text-decoration: none;
+				width: 25px;	
+			}
+			
+			a {
+				@include border-radius(5px);
+				@include box-shadow(0 3px 0 $theme-background-highlight);
+				background-color: $button-background-grey;
+				color: darken($theme-background-highlight, 5%);
+				font-family: $ui-font-highlight;
+				position: relative;
+				text-indent: -999px;
+				
 
-				li {
-					@extend %li;
+				&:after {
+					@extend %awesome;
+					left: 0;
+					line-height: 25px;
+					position: absolute;
+					text-indent: 0;
+					top: 0;
+					z-index: 999;
 				}
-			}	 		
-	 	}
-	 }
+				
+				&[href*="action=unread"],
+				&[href*="action=feed-items"] {
+					&[href*="direction=asc"] {
+						&:after {
+							content: "\f162";
+						}
+					}					
+				}
+				&[href*="action=unread"],
+				&[href*="action=feed-items"] {
+					&[href*="direction=desc"] {
+						&:after {
+							content: "\f163";
+						}
+					}
+				}
+				&[href*="mark-as-read"],
+				&[href*="mark-all-read"],
+				&[href="?action=mark-all-read"],
+				&[href*="mark-feed-as-read"] {
+					&:after {
+						content: "\f058";
+					}
+				}
+				&[href="?action=add"] {
+					&:after {
+						content: "\f067";
+					}
+				}
+				&[href="?action=import"] {
+					&:after {
+						content: "\f093";
+					}
+				}
+				&[href="?action=export"] {
+					&:after {
+						content: "\f019";
+					}
+				}					
+				&[href="?action=refresh-all"] {
+					&:after {
+						content: "\f021";
+					}
+				}
+				&[href="?action=confirm-flush-history"] {
+					&:after {
+						content: "\f014";
+					}
+				}
+				&[href="?action=feeds"] {
+					&:after {
+						content: "\f09e";
+					}
+				}
+				&[href="?action=config"] {
+					&:after {
+						content: "\f013";
+					}
+				}
+
+				&[href="?action=help"] {
+					&:after {
+						content: "\f128";
+					}
+				}
+				
+				&[href="?action=services"] {
+					&:after {
+						content: "\f1e0";
+					}
+				}
+				&[href="?action=about"] {
+					&:after {
+						content: "\f129";
+					}
+				}
+				&[href="?action=database"] {
+					&:after {
+						content: "\f1c0";
+					}
+				}
+				&[href="?action=api"] {
+					&:after {
+						content: "\f084";
+					}
+				}
+				&[href*="action=refresh-feed"] {
+					&:after {
+						content: "\f021";
+					}
+				}
+				&[href*="action=console"] {
+					&:after {
+						content: "\f120";
+					}
+				}
+				&[href*="action=flush-console"] {
+					&:after {
+						content: "\f12d";
+					}
+				}	
+			}
+
+		}
+	}
 }
+
+.page-section {
+ 	h2 {
+ 		@extend %title;
+ 		margin-bottom: 15px;
+ 		margin-top: 15px;
+ 	}
+
+ 	+ section {
+ 		background-color: $theme-background-light;
+ 		padding: 10px;
+		
+		ul {
+			@extend %ul;
+
+			li {
+				@extend %li;
+			}
+		}	 		
+ 	}
+}
+
 // Counters
 #page {
 	 &-counter {
